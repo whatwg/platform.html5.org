@@ -21,7 +21,7 @@ h2 {
   -ms-column-span: all;
 }
 
-#content {
+#content, #footer {
   font-size: 90%;
   text-align: left;
   border-top:solid 1px #CED4CA;
@@ -29,12 +29,24 @@ h2 {
   border-left:solid 1px #CED4CA;
   border-right:solid 1px #CED4CA;
   margin: 5px;
+  background-color:#FFFFFF;
+}
+
+#content {
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 30px;
-  background-color:#FFFFFF;
+  padding-bottom: 20px;
 }
+
+#footer {
+  text-align: right;
+  font-style: italic;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-bottom: 4px;
+}
+
 
 #content {
   -moz-column-count: 2;
