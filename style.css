@@ -12,6 +12,7 @@ a, a:hover {
 }
 
 h2 {
+  margin-top: 4px;
   border: 1px dashed #ccc;
   padding: 10px;
   column-span: all;
