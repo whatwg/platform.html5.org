@@ -1,12 +1,7 @@
 html {
-background-color: #DDE5D9;
-background-image:url(data:image/gif;base64,R0lGODlhBAAEAIAAANra2v///yH5BAAAAAAALAAAAAAEAAQAAAIFTGB4xlcAOw==);
-background-repeat: repeat;
+background: #DDE5D9 url(data:image/gif;base64,R0lGODlhBAAEAIAAANra2v///yH5BAAAAAAALAAAAAAEAAQAAAIFTGB4xlcAOw==) repeat 0 0;
 font-family: "Lucida Sans Unicode", "Lucida Sans", verdana, arial, helvetica;
 padding:20px;
-}
-a, a:hover {
-color: #ff6900; text-decoration: none;
 }
 body{
 font-size: 90%;
@@ -30,6 +25,16 @@ column-fill:auto;
 -ms-column-gap: 10px;
 -ms-column-fill:auto;
 }
+a, a:hover {
+color: #ff6900;
+text-decoration: none;
+}
+a:hover {
+color: #777;
+}
+a img {
+border:0;
+}
 h1,
 #lastmod{
 background:#fff;
@@ -43,6 +48,7 @@ column-span: all;
 -ms-column-span: all;
 }
 #lastmod{
+break-before:always;
 display:block;
 margin: 0 -20px -70px;
 padding:5px 20px;
@@ -53,13 +59,7 @@ position:fixed;
 top:0;
 right:0;
 } 
-a img {
-border:0px;
-}
-a:hover {
-color: #777;
-}
-dl {
+dl{
 margin-top: 0;
 padding-top: 0;
 break-inside: avoid;
@@ -69,57 +69,55 @@ color: #0b5b9d;
 font-weight: bold;
 margin-top: 0;
 padding-top: 0;
-white-space: nowrap;
 break-after: avoid;
 }
 dd {
 margin-left: 2em;
 }
-
 @media all and (max-width : 1200px) {
-body {
-column-count: 2; 
-column-gap: 20px;
-column-fill:auto;
+	body {
+	column-count: 2; 
+	column-gap: 20px;
+	column-fill:auto;
 
--moz-column-count: 2; 
--moz-column-gap: 20px;
--moz-column-fill:auto; 
+	-moz-column-count: 2; 
+	-moz-column-gap: 20px;
+	-moz-column-fill:auto; 
 
--webkit-column-count: 2; 
--webkit-column-gap: 20px;
--webkit-column-fill:auto;   
+	-webkit-column-count: 2; 
+	-webkit-column-gap: 20px;
+	-webkit-column-fill:auto;   
 
--o-column-count: 2; 
--o-column-gap: 20px;
--o-column-fill:auto;
+	-o-column-count: 2; 
+	-o-column-gap: 20px;
+	-o-column-fill:auto;
 
--ms-column-count: 2; 
--ms-column-gap: 20px;
--ms-column-fill:auto;
-}
+	-ms-column-count: 2; 
+	-ms-column-gap: 20px;
+	-ms-column-fill:auto;
+	}
 }
 
 @media all and (max-width : 800px) {
-body {
-column-count: 1; 
-column-gap: 10px;
-column-fill:auto;
+	body {
+	column-count: 1; 
+	column-gap: 10px;
+	column-fill:auto;
 
--moz-column-count: 1; 
--moz-column-gap: 10px;
--moz-column-fill:auto; 
+	-moz-column-count: 1; 
+	-moz-column-gap: 10px;
+	-moz-column-fill:auto; 
 
--webkit-column-count: 1; 
--webkit-column-gap: 10px;
--webkit-column-fill:auto;   
+	-webkit-column-count: 1; 
+	-webkit-column-gap: 10px;
+	-webkit-column-fill:auto;   
 
--o-column-count: 1; 
--o-column-gap: 10px;
--o-column-fill:auto;
+	-o-column-count: 1; 
+	-o-column-gap: 10px;
+	-o-column-fill:auto;
 
--ms-column-count: 1; 
--ms-column-gap: 10px;
--ms-column-fill:auto;
-}
+	-ms-column-count: 1; 
+	-ms-column-gap: 10px;
+	-ms-column-fill:auto;
+	}
 }
