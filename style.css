@@ -1,123 +1,121 @@
 html {
-background: #DDE5D9 url(data:image/gif;base64,R0lGODlhBAAEAIAAANra2v///yH5BAAAAAAALAAAAAAEAAQAAAIFTGB4xlcAOw==) repeat 0 0;
-font-family: "Lucida Sans Unicode", "Lucida Sans", verdana, arial, helvetica;
-padding:20px;
+  background: #DDE5D9 url(data:image/gif;base64,R0lGODlhBAAEAIAAANra2v///yH5BAAAAAAALAAAAAAEAAQAAAIFTGB4xlcAOw==) repeat 0 0;
+  font-family: "Lucida Sans Unicode", "Lucida Sans", verdana, arial, helvetica;
 }
-body{
-font-size: 90%;
-border:solid 1px #CED4CA;
-margin: 5px;
-background-color:#FFF;
-padding:20px 20px 30px;
-column-count: 3; 
-column-gap: 10px;
-column-fill:auto;
--moz-column-count: 3; 
--moz-column-gap: 10px;
--moz-column-fill:auto; 
--webkit-column-count: 3; 
--webkit-column-gap: 10px;
--webkit-column-fill:auto;   
--o-column-count: 3; 
--o-column-gap: 10px;
--o-column-fill:auto;
--ms-column-count: 3; 
--ms-column-gap: 10px;
--ms-column-fill:auto;
+#content, #footer {
+  font-size: 90%;
+  border: solid 1px #CED4CA;
+  background-color: #FFF;
+  padding: 4px 4px 4px 20px;
+  margin: 4px 10px 4px 10px;
+}
+#content {
+  margin-top: 20px;
+  padding: 20px;
+  column-count: 3; 
+  column-gap: 10px;
+  column-fill: auto;
+  -moz-column-count: 3; 
+  -moz-column-gap: 10px;
+  -moz-column-fill: auto; 
+  -webkit-column-count: 3; 
+  -webkit-column-gap: 10px;
+  -webkit-column-fill: auto;   
+  -o-column-count: 3; 
+  -o-column-gap: 10px;
+  -o-column-fill: auto;
+  -ms-column-count: 3; 
+  -ms-column-gap: 10px;
+  -ms-column-fill: auto;
 }
 a, a:hover {
-color: #ff6900;
-text-decoration: none;
+  color: #ff6900;
+  text-decoration: none;
 }
 a:hover {
-color: #777;
+  color: #777;
 }
-a img {
-border:0;
+#github {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
 }
-h1,
-#lastmod{
-background:#fff;
-margin-top: 4px;
-border: 1px dashed #ccc;
-padding: 10px;
-column-span: all;
--moz-column-span: all;
--webkit-column-span: all;
--o-column-span: all;
--ms-column-span: all;
-}
-#lastmod{
-break-before:always;
-display:block;
-margin: 0 -20px -70px;
-padding:5px 20px;
-border-style:solid;
+h1 {
+  background: #fff;
+  margin-top: 4px;
+  border: 1px dashed #ccc;
+  padding: 10px;
+  column-span: all;
+  -moz-column-span: all;
+  -webkit-column-span: all;
+  -o-column-span: all;
+  -ms-column-span: all;
 }
 body > a + a{
-position:fixed;
-top:0;
-right:0;
+  position: fixed;
+  top: 0;
+  right: 0;
 } 
 dl{
-margin-top: 0;
-padding-top: 0;
-break-inside: avoid;
+  margin-top: 0;
+  padding-top: 0;
+  break-inside: avoid;
 }
 dt {
-color: #0b5b9d;
-font-weight: bold;
-margin-top: 0;
-padding-top: 0;
-break-after: avoid;
+  color: #0b5b9d;
+  font-weight: bold;
+  margin-top: 0;
+  padding-top: 0;
+  break-after: avoid;
 }
 dd {
-margin-left: 2em;
+  margin-left: 2em;
 }
 @media all and (max-width : 1200px) {
-	body {
-	column-count: 2; 
-	column-gap: 20px;
-	column-fill:auto;
+  #content {
+    column-count: 2; 
+    column-gap: 20px;
+    column-fill: auto;
 
-	-moz-column-count: 2; 
-	-moz-column-gap: 20px;
-	-moz-column-fill:auto; 
+    -moz-column-count: 2; 
+    -moz-column-gap: 20px;
+    -moz-column-fill: auto; 
 
-	-webkit-column-count: 2; 
-	-webkit-column-gap: 20px;
-	-webkit-column-fill:auto;   
+    -webkit-column-count: 2; 
+    -webkit-column-gap: 20px;
+    -webkit-column-fill: auto;   
 
-	-o-column-count: 2; 
-	-o-column-gap: 20px;
-	-o-column-fill:auto;
+    -o-column-count: 2; 
+    -o-column-gap: 20px;
+    -o-column-fill: auto;
 
-	-ms-column-count: 2; 
-	-ms-column-gap: 20px;
-	-ms-column-fill:auto;
-	}
+    -ms-column-count: 2; 
+    -ms-column-gap: 20px;
+    -ms-column-fill: auto;
+  }
 }
 
 @media all and (max-width : 800px) {
-	body {
-	column-count: 1; 
-	column-gap: 10px;
-	column-fill:auto;
+  #content {
+    column-count: 1; 
+    column-gap: 10px;
+    column-fill: auto;
 
-	-moz-column-count: 1; 
-	-moz-column-gap: 10px;
-	-moz-column-fill:auto; 
+    -moz-column-count: 1; 
+    -moz-column-gap: 10px;
+    -moz-column-fill: auto; 
 
-	-webkit-column-count: 1; 
-	-webkit-column-gap: 10px;
-	-webkit-column-fill:auto;   
+    -webkit-column-count: 1; 
+    -webkit-column-gap: 10px;
+    -webkit-column-fill: auto;   
 
-	-o-column-count: 1; 
-	-o-column-gap: 10px;
-	-o-column-fill:auto;
+    -o-column-count: 1; 
+    -o-column-gap: 10px;
+    -o-column-fill: auto;
 
-	-ms-column-count: 1; 
-	-ms-column-gap: 10px;
-	-ms-column-fill:auto;
-	}
+    -ms-column-count: 1; 
+    -ms-column-gap: 10px;
+    -ms-column-fill: auto;
+  }
 }

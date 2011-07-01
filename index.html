@@ -4,6 +4,7 @@
 <style type="text/css" media="screen">
   @import url(style.css);
 </style>
+<section id=content>
 <h1>The&#160;Web&#160;platform: Browser&#160;technologies</h1>
 <dl>
   <dt>Core platform</dt>
@@ -58,6 +59,13 @@
   <dd><a href="http://dev.w3.org/2006/webapi/progress/">Progress Events</a></dd>
 </dl>
 <dl>
+  <dt>HTML bonus features</dt>
+  <dd><a href="http://www.w3.org/TR/wai-aria/">ARIA</a></dd>
+  <dd><a href="http://dev.w3.org/html5/spec/history.html#history">History API</a></dd>
+  <dd><a href="http://dev.w3.org/html5/spec/dnd.html#dnd">Drag and drop API</a></dd>
+  <dd><a href="http://dev.w3.org/html5/spec/editing.html#contenteditable">contentEditable</a></dd>
+</dl>
+<dl>
   <dt>Performance optimization and analysis</dt>
   <dd><a href="http://dev.w3.org/html5/workers/">Web Workers</a></dd>
   <dd><a href="http://www.w3c-test.org/webperf/specs/RequestAnimationFrame/">Timing control for script-based animations</a></dd>
@@ -67,20 +75,14 @@
   <a href="http://www.w3c-test.org/webperf/specs/ResourceTiming/">Resource Timing</a></dd>
 </dl>
 <dl>
-  <dt>HTML bonus features</dt>
-  <dd><a href="http://www.w3.org/TR/wai-aria/">ARIA</a></dd>
-  <dd><a href="http://dev.w3.org/html5/spec/history.html#history">History API</a></dd>
-  <dd><a href="http://dev.w3.org/html5/spec/dnd.html#dnd">Drag and drop API</a></dd>
-  <dd><a href="http://dev.w3.org/html5/spec/editing.html#contenteditable">contentEditable</a></dd>
-</dl>
-<dl>
   <dt>Other core-platform bonus features</dt>
   <dd><a href="http://www.w3.org/TR/selectors-api/">Selectors API</a></dd>
   <dd><a href="http://dev.w3.org/2006/waf/access-control/">Cross-Origin Resource Sharing</a></dd>
   <dd><a href="http://html5.org/specs/dom-parsing.html">DOM Parsing and Serialization</a></dd>
   <dd><a href="http://html5.org/specs/dom-range.html">DOM Range</a></dd>
-  <dd><a href="http://www.w3.org/TR/DOM-Level-2-Traversal-Range/">DOM Traversal</a></dd>
-  <dd><a href="http://www.w3.org/TR/DOM-Level-3-XPath/">DOM XPath</a></dd>
+  <dd><a href="http://www.w3.org/TR/DOM-Level-2-Traversal-Range/">DOM Traversal</a>
+  and
+  <a href="http://www.w3.org/TR/DOM-Level-3-XPath/">DOM XPath</a></dd>
   <dd><a href="http://www.khronos.org/registry/typedarray/specs/latest/">Typed Array</a></dd>
   <dd><a href="http://www.w3.org/TR/2006/REC-xml-20060816/">XML</a>,
   <a href="http://www.w3.org/TR/xpath/">XPath</a>,
@@ -101,12 +103,16 @@
   <dd><a href="http://tools.ietf.org/html/rfc2397">data URLs</a></dd>
   <dd><a href="http://tools.ietf.org/html/rfc5988">Link header</a></dd>
   <dd><a href="http://tools.ietf.org/html/rfc6266">Content-Disposition header</a></dd>
-  <dd><a href="http://www.w3.org/TR/xmlbase/">XML Base</a></dd>
-  <dd><a href="http://www.w3.org/TR/xml-names/">XML Namespaces</a></dd>
+  <dd><a href="http://www.w3.org/TR/xmlbase/">XML Base</a>
+  and
+  <a href="http://www.w3.org/TR/xml-names/">XML Namespaces</a></dd>
 </dl>
+</section>
+<div id=footer>
 <a id=lastmod href="https://github.com/sideshowbarker/platform.html5.org/commits/master">changelog</a>
-<a href="https://github.com/sideshowbarker/platform.html5.org"><img src="https://d3nwyuy0nl342s.cloudfront.net/img/71eeaab9d563c2b3c590319b398dd35683265e85/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub"></a>
-<script class='remove'>
+</div>
+<a href="https://github.com/sideshowbarker/platform.html5.org"><img id=github src="https://d3nwyuy0nl342s.cloudfront.net/img/71eeaab9d563c2b3c590319b398dd35683265e85/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub"></a>
+<script>
   function getLastModifiedDate() {
     var d = new Date(document.lastModified);
     return d.toISOString().substring(0,10);
