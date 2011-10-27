@@ -21,12 +21,6 @@ html {
   -webkit-column-count: 3; 
   -webkit-column-gap: 10px;
   -webkit-column-fill: auto;   
-  -o-column-count: 3; 
-  -o-column-gap: 10px;
-  -o-column-fill: auto;
-  -ms-column-count: 3; 
-  -ms-column-gap: 10px;
-  -ms-column-fill: auto;
 }
 a, a:hover {
   color: #ff6900;
@@ -49,8 +43,6 @@ h1 {
   column-span: all;
   -moz-column-span: all;
   -webkit-column-span: all;
-  -o-column-span: all;
-  -ms-column-span: all;
 }
 body > a + a{
   position: fixed;
@@ -85,14 +77,6 @@ dd {
     -webkit-column-count: 2; 
     -webkit-column-gap: 20px;
     -webkit-column-fill: auto;   
-
-    -o-column-count: 2; 
-    -o-column-gap: 20px;
-    -o-column-fill: auto;
-
-    -ms-column-count: 2; 
-    -ms-column-gap: 20px;
-    -ms-column-fill: auto;
   }
 }
 
@@ -109,13 +93,5 @@ dd {
     -webkit-column-count: 1; 
     -webkit-column-gap: 10px;
     -webkit-column-fill: auto;   
-
-    -o-column-count: 1; 
-    -o-column-gap: 10px;
-    -o-column-fill: auto;
-
-    -ms-column-count: 1; 
-    -ms-column-gap: 10px;
-    -ms-column-fill: auto;
   }
 }
