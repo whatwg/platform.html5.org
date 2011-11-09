@@ -44,6 +44,11 @@ h1 {
   -moz-column-span: all;
   -webkit-column-span: all;
 }
+p {
+  column-span: all;
+  -moz-column-span: all;
+  -webkit-column-span: all;
+}
 body > a + a{
   position: fixed;
   top: 0;
