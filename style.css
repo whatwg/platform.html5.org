@@ -29,6 +29,12 @@ a, a:hover {
 a:hover {
   color: #777;
 }
+a.caniuse {
+  color: #ccc;
+}
+a.caniuse:hover {
+  color: #005A9C;
+}
 #github {
   position: absolute;
   top: 0;
