@@ -29,10 +29,14 @@ a, a:hover {
 a:hover {
   color: #777;
 }
-a.caniuse {
+a.caniuse,
+a.mdn
+{
   color: #ccc;
 }
-a.caniuse:hover {
+a.caniuse:hover,
+a.mdn:hover
+{
   color: #005A9C;
 }
 #github {
