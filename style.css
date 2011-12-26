@@ -30,12 +30,14 @@ a:hover {
   color: #777;
 }
 a.caniuse,
-a.mdn
+a.mdn,
+a.tests
 {
   color: #ccc;
 }
 a.caniuse:hover,
-a.mdn:hover
+a.mdn:hover,
+a.tests:hover
 {
   color: #005A9C;
 }

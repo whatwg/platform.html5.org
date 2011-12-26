@@ -13,6 +13,7 @@
   <dd><a href="http://www.w3.org/Style/CSS/current-work#roadmap">CSS</a>
   <a class=caniuse href="http://caniuse.com/#cats=CSS">ⓦ</a>
   <dd><a href="http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html">DOM</a>
+  <a class=tests href="http://w3c-test.org/webapps/DOMCore/">ⓣ</a>
   <dd><a href="http://es5.github.com/">JavaScript</a>
 </dl>
 <dl>
@@ -21,6 +22,8 @@
   <a class=caniuse href="http://caniuse.com/#cats=SVG">ⓦ</a>
   <dd><a href="http://dev.w3.org/html5/2dcontext/">Canvas</a>
   <a class=caniuse href="http://caniuse.com/#feat=canvas">ⓦ</a>
+  <a class=tests href="http://w3c-test.org/html/tests/approved/canvas/">ⓣ</a>
+  <a class=tests href="http://w3c-test.org/html/tests/submission/Microsoft/canvas/">ⓣ</a>
   <dd><a href="https://www.khronos.org/registry/webgl/specs/latest/">WebGL</a>
   <a class=caniuse href="http://caniuse.com/#feat=webgl">ⓦ</a>
   <dd><a href="http://dev.w3.org/webfonts/WOFF/spec/">WOFF</a>
@@ -40,9 +43,12 @@
   <dt>Platform interaction, events, messaging</dt>
   <dd><a href="http://dev.w3.org/geo/api/spec-source.html">Geolocation</a>
   <a class=caniuse href="http://caniuse.com/#feat=geolocation">ⓦ</a>
+  <a class=tests href="http://dev.w3.org/geo/api/test-suite/">ⓣ</a>
   <dd><a href="http://dev.w3.org/geo/api/spec-source-orientation">DeviceOrientation</a>
   <a class=caniuse href="http://caniuse.com/#feat=deviceorientation">ⓦ</a>
+  <a class=tests href="http://w3c-test.org/html/tests/submission/MOSQUITO/device-orientation/">ⓣ</a>
   <dd><a href="http://www.w3.org/TR/DOM-Level-3-Events/">DOM Events</a>
+  <a class=tests href="http://w3c-test.org/webapps/DOMEvents/tests/">ⓣ</a>
   <dd><a href="http://www.w3.org/TR/touch-events/">Touch Events</a>
   <a class=caniuse href="http://caniuse.com/#feat=touch">ⓦ</a>
   <dd><a href="http://dev.w3.org/2006/webapi/clipops/clipops.html">Clipboard API and events</a>
@@ -59,8 +65,10 @@
   <dt>Storage</dt>
   <dd><a href="http://dvcs.w3.org/hg/IndexedDB/raw-file/tip/Overview.html">Indexed Database</a>
   <a class=caniuse href="http://caniuse.com/#feat=indexeddb">ⓦ</a>
+  <a class=tests href="http://w3c-test.org/webapps/IndexedDB/tests/">ⓣ</a>
   <dd><a href="http://dev.w3.org/html5/spec/offline.html#offline">Offline Web applications</a>
   <a class=caniuse href="http://caniuse.com/#feat=offline-apps">ⓦ</a>
+  <a class=tests href="http://w3c-test.org/html/tests/submission/Microsoft/appcache/">ⓣ</a>
   <dd><a href="http://dev.w3.org/html5/webstorage/">Web Storage</a>
   <a class=caniuse href="http://caniuse.com/#feat=namevalue-storage">ⓦ</a>
   <a class=mdn href="https://developer.mozilla.org/En/DOM/Storage">ⓜ</a>
@@ -87,28 +95,55 @@
   <dd><a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol">WebSocket protocol</a>
   and <a href="http://dev.w3.org/html5/websockets/">WebSocket API</a>
   <a class=caniuse href="http://caniuse.com/#feat=websockets">ⓦ</a>
+  <a class=tests href="http://w3c-test.org/webapps/WebSockets/tests/">ⓣ</a>
   <dd><a href="http://dev.w3.org/html5/eventsource/">Server-Sent Events</a>
   <a class=caniuse href="http://caniuse.com/#feat=eventsource">ⓦ</a>
+  <a class=tests href="http://w3c-test.org/html/tests/submission/MOSQUITO/event-source/">ⓣ</a>
   <dd><a href="http://dev.w3.org/2006/webapi/XMLHttpRequest-2/">XMLHttpRequest</a>
   <a class=caniuse href="http://caniuse.com/#feat=xhr2">ⓦ</a>
   <a class=mdn href="https://developer.mozilla.org/en/XMLHttpRequest/FormData">ⓜ</a>
+  <a class=tests href="http://w3c-test.org/webapps/XMLHttpRequest/tests/">ⓣ</a>
+  <a class=tests href="http://w3c-test.org/webappsec/tests/cors/">ⓣ</a>
   <dd><a href="http://dev.w3.org/2006/webapi/progress/">Progress Events</a>
+  <a class=tests href="http://w3c-test.org/webapps/ProgressEvents/tests/">ⓣ</a>
 </dl>
 <dl>
   <dt>HTML bonus features</dt>
   <dd><a href="http://www.w3.org/TR/wai-aria/">ARIA</a>
+  <dd><a href="http://dev.w3.org/html5/spec/Overview.html#dom-classlist">classList (DOMTokenList)</a>
+  <a class=caniuse href="http://caniuse.com/#search=classlist">ⓦ</a>
+  <a class=mdn href="https://developer.mozilla.org/en/DOM/element.classList">ⓜ</a>
+  <a class=mdn href="https://developer.mozilla.org/en/DOM/DOMTokenList">ⓜ</a>
+  <a class=tests href="http://w3c-test.org/html/tests/submission/Opera/classList/">ⓣ</a>
+  <dd><a href="http://dev.w3.org/html5/spec/global-attributes.html#embedding-custom-non-visible-data-with-the-data-attributes">dataset</a>
+  <a class=caniuse href="http://caniuse.com/#search=dataset">ⓦ</a>
+  <a class=tests href="http://w3c-test.org/html/tests/submission/Apple/dataset/">ⓣ</a>
+  <dd><a href="http://dev.w3.org/html5/spec/the-script-element.html#attr-script-async">async for scripts</a>
+  <a class=caniuse href="http://caniuse.com/#search=async">ⓦ</a>
+  <a class=mdn href="https://developer.mozilla.org/en/HTML/Element/script#Attributes">ⓜ</a>
+  <a class=tests href="http://w3c-test.org/html/tests/submission/Microsoft/async/">ⓣ</a>
+  <dd><a href="http://dev.w3.org/html5/spec/the-script-element.html#attr-script-defer">defer for scripts</a>
+  <a class=caniuse href="http://caniuse.com/#search=defer">ⓦ</a>
+  <a class=mdn href="https://developer.mozilla.org/en/HTML/Element/script#Attributes">ⓜ</a>
   <a class=caniuse href="http://caniuse.com/#feat=wai-aria">ⓦ</a>
   <dd><a href="http://dev.w3.org/html5/spec/history.html#history">Session-history management</a>
   <a class=caniuse href="http://caniuse.com/#feat=history">ⓦ</a>
   <a class=mdn href="https://developer.mozilla.org/en/DOM/Manipulating_the_browser_history">ⓜ</a>
+  <a class=tests href="http://w3c-test.org/html/tests/submission/Microsoft/history/">ⓣ</a>
+  <a class=tests href="http://w3c-test.org/html/tests/submission/Opera/historyinterface/">ⓣ</a>
   <dd><a href="http://dev.w3.org/html5/spec/history.html#event-hashchange">hashchange</a>
   <a class=caniuse href="http://caniuse.com/#feat=hashchange">ⓦ</a>
   <a class=mdn href="https://developer.mozilla.org/en/DOM/window.onhashchange">ⓜ</a>
+  <dd><a href="http://dev.w3.org/html5/spec/the-iframe-element.html#attr-iframe-sandbox">Sandboxed iframe</a>
+  <a class=tests href="http://w3c-test.org/html/tests/submission/Microsoft/sandbox/">ⓣ</a>
   <dd><a href="http://dev.w3.org/html5/spec/dnd.html#dnd">Drag and drop</a>
   <a class=caniuse href="http://caniuse.com/#feat=dragndrop">ⓦ</a>
+  <a class=tests href="http://w3c-test.org/html/tests/submission/Microsoft/dragdrop/">ⓣ</a>
   <dd><a href="http://dev.w3.org/html5/spec/editing.html#contenteditable">contentEditable</a>
   <a class=caniuse href="http://caniuse.com/#feat=contenteditable">ⓦ</a>
+  <a class=tests href="http://tc.labs.opera.com/html/global-attributes/contenteditable/">ⓣ</a>
   <dd><a href="http://dvcs.w3.org/hg/editing/raw-file/tip/editing.html">HTML Editing APIs</a>
+  <a class=tests href="http://dvcs.w3.org/hg/editing/raw-file/tip/autoimplementation.html">ⓣ</a>
   <dd><a href="http://rniwa.com/editing/undomanager.html">UndoManager and DOM Transaction</a>
 </dl>
 <dl>
@@ -116,32 +151,53 @@
   <dd><a href="http://dev.w3.org/html5/workers/">Web Workers</a>
   <a class=caniuse href="http://caniuse.com/#feat=webworkers">ⓦ</a>
   <a class=mdn href="https://developer.mozilla.org/En/Using_web_workers">ⓜ</a>
+  <a class=tests href="http://w3c-test.org/webapps/Workers/tests/">ⓣ</a>
   <dd><a href="http://dev.w3.org/html5/workers/#shared-workers">Shared Workers</a>
   <a class=caniuse href="http://caniuse.com/#feat=sharedworkers">ⓦ</a>
   <dd><a href="http://www.w3c-test.org/webperf/specs/NavigationTiming/">Navigation Timing</a>
   <a class=caniuse href="http://caniuse.com/#feat=nav-timing">ⓦ</a>
   <a class=mdn href="https://developer.mozilla.org/en/API/navigationTiming">ⓜ</a>
+  <a class=tests href="http://w3c-test.org/webperf/tests/approved/navigation-timing/html/">ⓣ</a>
+  <a class=tests href="http://w3c-test.org/webperf/tests/submission/Google/NavigationTiming/">ⓣ</a>
   <dd><a href="http://www.w3c-test.org/webperf/specs/RequestAnimationFrame/">Timing control for script-based animations</a>
   <a class=caniuse href="http://caniuse.com/#feat=requestanimationframe">ⓦ</a>
-  <dd><a href="http://www.w3c-test.org/webperf/specs/PageVisibility/">Page Visibility</a>,
-  <a href="http://www.w3c-test.org/webperf/specs/ResourceTiming/">Resource Timing</a>,
-  <a href="http://www.w3c-test.org/webperf/specs/UserTiming/">User Timing</a>,
-  <a href="http://www.w3c-test.org/webperf/specs/PerformanceTimeline/">Performance Timeline</a>
+  <dd><a href="http://www.w3c-test.org/webperf/specs/PageVisibility/">Page Visibility</a>
+  <a class=tests href="http://w3c-test.org/webperf/tests/submission/Microsoft/PageVisibility/">ⓣ</a>
+  <dd><a href="http://www.w3c-test.org/webperf/specs/ResourceTiming/">Resource Timing</a>,
+  <a href="http://www.w3c-test.org/webperf/specs/UserTiming/">User Timing</a>
+  <dd><a href="http://www.w3c-test.org/webperf/specs/PerformanceTimeline/">Performance Timeline</a>
+</dl>
+<dl>
+  <dt>Security and privacy</dt>
+  <dd><a href="http://dev.w3.org/2006/waf/access-control/">Cross-Origin Resource Sharing</a>
+  <a class=caniuse href="http://caniuse.com/#feat=cors">ⓦ</a>
+  <a class=tests href="http://w3c-test.org/webappsec/tests/cors/">ⓣ</a>
+  <a class=tests href="http://w3c-test.org/webapps/CORS/tests/">ⓣ</a>
+  <dd><a href="https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-specification.dev.html">Content Security Policy</a>
+  <a class=tests href="http://w3c-test.org/webappsec/tests/csp/">ⓣ</a>
+  <dd><a href="http://dvcs.w3.org/hg/from-origin/raw-file/tip/Overview.html">The From-Origin Header</a>
+  <dd><a href="https://wiki.mozilla.org/Privacy/Features/DOMCryptAPISpec/Latest">DOMCrypt</a>
+  <dd><a href="http://wiki.whatwg.org/wiki/Crypto">window.crypto.getRandomValues</a>
 </dl>
 <dl>
   <dt>Other core-platform bonus features</dt>
   <dd><a href="http://dev.w3.org/2006/webapi/selectors-api2/">Selectors API</a>
   <a class=caniuse href="http://caniuse.com/#feat=queryselector">ⓦ</a>
+  <a class=tests href="http://dev.w3.org/2006/webapi/selectors-api-testsuite/">ⓣ</a>
   <dd><a href="http://dev.w3.org/2006/webapi/selectors-api2/#matches">matches(<i>selector</i>) method</a>
   <a class=caniuse href="http://caniuse.com/#feat=matchesselector">ⓦ</a>
   <dd><a href="http://dvcs.w3.org/hg/url/raw-file/tip/Overview.html">URL API</a>
   <dd><a href="http://tools.ietf.org/html/rfc2397">data URLs</a>
+  <a class=tests href="http://hixie.ch/tests/adhoc/data/">ⓣ</a>
   <a class=caniuse href="http://caniuse.com/#feat=datauri">ⓦ</a>
   <dd><a href="http://es5.github.com/#x15.12">JSON parsing</a>
   <a class=caniuse href="http://caniuse.com/#feat=json">ⓦ</a>
   <a class=mdn href="https://developer.mozilla.org/En/Using_native_JSON">ⓜ</a>
+  <dd><a href="http://dev.w3.org/html5/spec/common-dom-interfaces.html#safe-passing-of-structured-data">Structured clones</a>
+  <a class=mdn href="https://developer.mozilla.org/en/DOM/The_structured_clone_algorithm">ⓜ</a>
+  <a class=tests href="https://developer.mozilla.org/en/DOM/The_structured_clone_algorithm">ⓣ</a>
   <dd><a href="http://html5.org/specs/dom-parsing.html">DOM Parsing and Serialization</a>
-  <dd><a href="http://html5.org/specs/dom-range.html">DOM Range</a>, <a href="http://www.w3.org/TR/DOM-Level-3-XPath/">DOM XPath</a>
+  <dd><a href="http://www.w3.org/TR/DOM-Level-3-XPath/">DOM XPath</a>
   <dd><a href="http://www.khronos.org/registry/typedarray/specs/latest/">Typed Array</a>
   <a class=caniuse href="http://caniuse.com/#feat=typedarrays">ⓦ</a>
   <a class=mdn href="https://developer.mozilla.org/en/javascript_typed_arrays">ⓜ</a>
@@ -149,15 +205,6 @@
   <a href="http://www.w3.org/TR/xpath/">XPath</a>,
   <a href="http://www.w3.org/TR/xslt">XSLT</a>,
   <a href="http://www.w3.org/TR/xml-stylesheet/">xml-stylesheet</a>
-</dl>
-<dl>
-  <dt>Security and privacy</dt>
-  <dd><a href="http://dev.w3.org/2006/waf/access-control/">Cross-Origin Resource Sharing</a>
-  <a class=caniuse href="http://caniuse.com/#feat=cors">ⓦ</a>
-  <dd><a href="https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-specification.dev.html">Content Security Policy</a>
-  <dd><a href="http://dvcs.w3.org/hg/from-origin/raw-file/tip/Overview.html">The From-Origin Header</a>
-  <dd><a href="https://wiki.mozilla.org/Privacy/Features/DOMCryptAPISpec/Latest">DOMCrypt</a>
-  <dd><a href="http://wiki.whatwg.org/wiki/Crypto">window.crypto.getRandomValues</a>
 </dl>
 <dl>
   <dt>Foundations</dt>
