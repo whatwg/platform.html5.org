@@ -1,0 +1,139 @@
+<!doctype html>
+<title>A feature history of modern HTML</title>
+<style>
+body {
+ font-family: sans-serif; font-size: 115%;
+ margin-right: 20%; margin-left: 5%; margin-top: 4%; margin-bottom: 5%}
+a { color: green; }
+dt { font-weight: bold; margin-top: 12px; margin-bottom: 8px; color: green; font-size: 115% }
+dt a { color: #ccc; }
+h1, h2, h3, h4, h5, h6 { color: green; }
+code { color: orangered; font-weight: bold }
+address { margin-top: 40px; }
+h1 { font-size: 180% }
+li p.note { margin-top: 8px; padding-left: 8px; }
+.note:before { content: "Note: "; }
+.note { color: green; background: transparent; font-family: sans-serif, Droid Sans Fallback; }
+.note, .warning {  font-style: italic; }
+.note p:first-child, .warning p:first-child { margin-top: 0; }
+.note p:last-child, .warning p:last-child { margin-bottom: 0; }
+</style>
+<h1>A feature history of modern HTML</h1>
+<p>This is a record of when and where particular features were first added
+to the HTML language, post-HTML4.
+<dl>
+<dt>2003-09-05</dt>
+<dd>
+<p><a href="https://lists.w3.org/Archives/Member/w3c-archive/2003Sep/att-0014/hfp.html">XHTML Module: Extensions to Form Controls</a>
+<p>The post-HTML4 history of HTML begins with the following additions to
+the language:
+<ul>
+<li>client-side HTML form validation
+<li>
+<code>datetime</code>,
+<code>date</code>,
+<code>expdate</code>,
+<code>time</code>,
+<code>number</code>,
+<code>integer</code>,
+ and <code>email</code>
+values for the <code>type</code> attribute of the
+<code>input</code> element
+<li><code>minimum</code> and <code>maximum</code> attributes of the
+<code>input</code> element
+(soon after
+renamed to just <code>min</code> and <code>max</code>)
+<li><code>editable</code> attribute for the <code>select</code> element
+(later dropped)
+<li><code>wrap</code> attribute for the <code>textarea</code> element
+<li><code>pattern</code> attribute for text-input controls
+<li><code>required</code> attribute for form controls
+<li><code>form</code> attribute for form controls
+<li><code>autocomplete</code> attribute for form controls
+<li><code>inputmode</code> attribute for text-input controls (later dropped)
+<li><code>help</code> attribute for form controls (borrowed from XForms, later dropped)
+</ul>
+
+<dt>2003-12-03</dt>
+<dd>
+<p><a href="http://www.hixie.ch/specs/html/forms/xforms-basic-1">Proposed XHTML Module: XForms Basic</a>
+<ul>
+<li><code>uri</code> value for the <code>type</code> attribute of the
+<code>input</code> element
+<li><code>output</code> element
+<p class=note><a href="http://www.w3.org/TR/2001/WD-xforms-20010608/slice7.html#ui-output">XForms 1.0</a>
+(2001-06-08 sixth WD) was first to have an <code>output</code> element
+</ul>
+
+<dt>2004-02-05</dt>
+<dd>
+<p><a href="http://www.hixie.ch/specs/html/forms/web-forms-2">Web Forms 2.0</a>
+<ul>
+<li><code>week</code> value for the <code>type</code> attribute of the
+<code>input</code> element
+<li><code>tel</code> value for the <code>type</code> attribute of the
+<code>input</code> element
+<li><code>location</code> value for the <code>type</code> attribute of the
+<code>input</code> element (later dropped)
+<li><code>precision</code> attribute for the <code>input</code> element
+(later renamed to <code>step</code>
+<li><code>replace</code> attribute for the <code>form</code> element (later
+dropped)
+</ul>
+
+<dt>2004-03-09</dt>
+<dd>
+<p><a href="http://www.hixie.ch/specs/html/forms/web-forms-3">Web Forms 2.0</a>
+<ul>
+<li><code>range</code> value for the <code>type</code> attribute of the
+<code>input</code> element
+</ul>
+
+<dt>2004-04-07</dt>
+<dd>
+<p><a href="http://www.hixie.ch/specs/html/apps/web-apps-1">Web Applications 1.0</a>
+<ul>
+<li>Document-level focus API
+<li>Element-level focus API
+</ul>
+
+<dt>2004-06-27</dt>
+<dd>
+<p><a href="http://www.hixie.ch/specs/html/forms/web-forms-3">Web Forms 2.0</a>
+<ul>
+<li><code>local-datetime</code> value for the <code>type</code> attribute of the
+<code>input</code> element (later renamed to <code>datetime-local</code>)
+<li><code>month</code> value for the <code>type</code> attribute of the
+<code>input</code> element
+<li><code>autofocus</code> attribute for form controls
+</ul>
+
+<dt>2004-09-23</dt>
+<dd>
+<p><a href="http://web.archive.org/web/20041009144718/http://whatwg.org/specs/web-apps/current-work/">Web Applications 1.0</a>
+<ul>
+<li><code>command</code> attribute (later dropped)
+<li><code>command</code> element
+<li><code>commandset</code> element (later dropped)
+<li><code>button</code> element
+<li><code>menu</code> element
+<li><code>menulabel</code> element (later dropped)
+<li><code>menubar</code> element (later dropped)
+<li><code>section</code> element
+<p class=note><a href="http://www.w3.org/TR/2004/WD-xhtml2-20040722/mod-structural.html#sec_8.8.">XHTML 2.0</a>
+(2004-07-22 sixth public working draft) had a <code>section</code> element
+<li><code>tabbox</code> element (later dropped)
+<li><code>switch</code> element (later dropped)
+<li><code>canvas</code> element
+<li><code>event-source</code> element (later dropped)
+<li>server-sent events feature
+<li><code>getElementsByClass</code> method (later renamed <code>getElementsByClassName</code>)
+</ul>
+
+<dt>2004-12-10</dt>
+<dd>
+<p><a href="http://www.whatwg.org/specs/web-forms/2004-12-10-call-for-comments/">Web Forms 2.0</a>
+<ul>
+<li><code>datalist</code> element
+<li><code>list</code> attribute of the <code>input</code> element
+</ul>
