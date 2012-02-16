@@ -1,4 +1,5 @@
 <!doctype html>
+<meta charset=utf-8>
 <title>A feature history of the modern Web Platorm</title>
 <style>
 body {
@@ -6,7 +7,6 @@ body {
  margin-right: 20%; margin-left: 5%; margin-top: 4%; margin-bottom: 5%}
 a { color: green; }
 dt { font-weight: bold; margin-top: 12px; margin-bottom: 8px; color: green; font-size: 115% }
-dt a { color: #ccc; }
 h1, h2, h3, h4, h5, h6 { color: green; }
 code { color: orangered; font-weight: bold }
 address { margin-top: 40px; }
@@ -21,10 +21,11 @@ li p.note { margin-top: 8px; padding-left: 8px; }
 <h1>A feature history of the modern Web Platform</h1>
 <p>This is a record of when and where selected new Web-platform features
 were first specified, post-HTML4 and post-CSS2.1.
+
 <dl>
-<dt>2003-09-05</dt>
+<dt>2003-09-05
+<a href="https://lists.w3.org/Archives/Member/w3c-archive/2003Sep/att-0014/hfp.html">XHTML Module: Extensions to Form Controls</a>
 <dd>
-<p><a href="https://lists.w3.org/Archives/Member/w3c-archive/2003Sep/att-0014/hfp.html">XHTML Module: Extensions to Form Controls</a>
 <p>The post-HTML4/CSS2.1 specification history of the Web Platform begins
 with the following additions to the HTML language:
 <ul>
@@ -54,52 +55,52 @@ renamed to just <code>min</code> and <code>max</code>)
 <li><code>help</code> attribute for form controls (borrowed from XForms, later dropped)
 </ul>
 
-<dt>2003-12-03</dt>
+<dt>2003-12-03
+<a href="http://www.hixie.ch/specs/html/forms/xforms-basic-1">Proposed XHTML Module: XForms Basic</a>
 <dd>
-<p><a href="http://www.hixie.ch/specs/html/forms/xforms-basic-1">Proposed XHTML Module: XForms Basic</a>
 <ul>
 <li><code>uri</code> value for the <code>type</code> attribute of the
-<code>input</code> element
+<code>input</code> element (later renamed to <code>url</code>)
 <li><code>output</code> element
 <p class=note><a href="http://www.w3.org/TR/2001/WD-xforms-20010608/slice7.html#ui-output">XForms 1.0</a>
 (2001-06-08 sixth WD) was first to have an <code>output</code> element
 </ul>
 
-<dt>2004-02-05</dt>
+<dt>2004-02-05
+<a href="http://www.hixie.ch/specs/html/forms/web-forms-2">Web Forms 2.0</a>
 <dd>
-<p><a href="http://www.hixie.ch/specs/html/forms/web-forms-2">Web Forms 2.0</a>
 <ul>
 <li><code>week</code> value for the <code>type</code> attribute of the
 <code>input</code> element
 <li><code>tel</code> value for the <code>type</code> attribute of the
-<code>input</code> element
+<code>input</code> element (later dropped but then later re-added)
 <li><code>location</code> value for the <code>type</code> attribute of the
 <code>input</code> element (later dropped)
 <li><code>precision</code> attribute for the <code>input</code> element
-(later renamed to <code>step</code>
+(later renamed to <code>step</code>)
 <li><code>replace</code> attribute for the <code>form</code> element (later
 dropped)
 </ul>
 
-<dt>2004-03-09</dt>
+<dt>2004-03-09
+<a href="http://www.hixie.ch/specs/html/forms/web-forms-3">Web Forms 2.0</a>
 <dd>
-<p><a href="http://www.hixie.ch/specs/html/forms/web-forms-3">Web Forms 2.0</a>
 <ul>
 <li><code>range</code> value for the <code>type</code> attribute of the
 <code>input</code> element
 </ul>
 
-<dt>2004-04-07</dt>
+<dt>2004-04-07
+<a href="http://www.hixie.ch/specs/html/apps/web-apps-1">Web Applications 1.0</a>
 <dd>
-<p><a href="http://www.hixie.ch/specs/html/apps/web-apps-1">Web Applications 1.0</a>
 <ul>
 <li>Document-level focus API
 <li>Element-level focus API
 </ul>
 
-<dt>2004-06-27</dt>
+<dt>2004-06-27
+<a href="http://www.hixie.ch/specs/html/forms/web-forms-3">Web Forms 2.0</a>
 <dd>
-<p><a href="http://www.hixie.ch/specs/html/forms/web-forms-3">Web Forms 2.0</a>
 <ul>
 <li><code>local-datetime</code> value for the <code>type</code> attribute of the
 <code>input</code> element (later renamed to <code>datetime-local</code>)
@@ -108,11 +109,12 @@ dropped)
 <li><code>autofocus</code> attribute for form controls
 </ul>
 
-<dt>2004-09-23</dt>
+<dt>2004-09-23
+<a href="http://web.archive.org/web/20041009144718/http://whatwg.org/specs/web-apps/current-work/">Web Applications 1.0</a>
 <dd>
-<p><a href="http://web.archive.org/web/20041009144718/http://whatwg.org/specs/web-apps/current-work/">Web Applications 1.0</a>
 <ul>
-<li><code>command</code> attribute (later dropped)
+<li><code>&lt;!DOCTYPE html PUBLIC "-//WHATWG//NONSGML HTML5//EN"></code> (later changed)
+<li><code>command</code> attribute (later dropped but then later re-added)
 <li><code>command</code> element
 <li><code>commandset</code> element (later dropped)
 <li><code>button</code> element
@@ -126,14 +128,87 @@ dropped)
 <li><code>switch</code> element (later dropped)
 <li><code>canvas</code> element
 <li><code>event-source</code> element (later dropped)
-<li>server-sent events feature
-<li><code>getElementsByClass</code> method (later renamed <code>getElementsByClassName</code>)
+<li>server-sent events
+<li><code>getElementsByClass</code> method (later renamed to <code>getElementsByClassName</code>)
+<li><code>Window</code> interface (first specified)
+<li><code>XMLHttpRequest</code> interface (first specified)
 </ul>
 
-<dt>2004-12-10</dt>
+<dt>2004-12-08
+<a href="http://web.archive.org/web/20041210054847/http://www.whatwg.org/specs/web-apps/current-work/">Web Applications 1.0</a>
 <dd>
-<p><a href="http://www.whatwg.org/specs/web-forms/2004-12-10-call-for-comments/">Web Forms 2.0</a>
+<ul>
+<li><code>navigation</code> element (later renamed to <code>nav</code>)
+<li><code>header</code> element
+<li><code>footer</code> element
+<li><code>article</code> element
+<li><code>sidebar</code> element (later renamed to <code>aside</code>)
+<li><code>calendar</code> element (later dropped)
+<li><code>card</code> element (later dropped)
+<li>inline data idea (placeholder for “where elements such as &lt;date> or &lt;time> might be defined”)
+<li><code>gauge</code> element (later renamed to <code>meter</code>)
+<li>progress meters (placeholder)
+<li>data grids/trees (placeholder)
+<li><code>context-menu</code> attribute (later renamed to <code>contextmenu</code>)
+<li><code>contentEditable</code> attribute (first specified; later renamed to <code>contenteditable</code>)
+<li><code>ElementTraversal</code> interface
+<li><code>Audio</code> interface (later changed to <code>HTMLAudioElement</code>)
+<li><code>Connection</code> interface (later changed to <code>WebSocket</code>)
+</ul>
+
+<dt>2004-12-10
+<a href="http://www.whatwg.org/specs/web-forms/2004-12-10-call-for-comments/">Web Forms 2.0</a>
+<dd>
 <ul>
 <li><code>datalist</code> element
 <li><code>list</code> attribute of the <code>input</code> element
+</ul>
+
+<dt>2005-02
+<a href="http://web.archive.org/web/20050204185858/http://whatwg.org/specs/web-apps/current-work/">Web Applications 1.0</a>
+<dd>
+<ul>
+<li>alternate style sheets (later dropped)
+</ul>
+
+<dt>2005-03
+<a href="http://web.archive.org/web/20050301091946/http://whatwg.org/specs/web-apps/current-work/">Web Applications 1.0</a>
+<dd>
+<ul>
+<li>cross-document messaging (<code>postMessageUp</code> and <code>postMessageDown</code> methods, shortly after changed to <code>postMessage</code>)
+</ul>
+
+<dt>2005-04
+<a href="http://web.archive.org/web/20050507071329/http://www.whatwg.org/specs/web-apps/current-work/">Web Applications 1.0</a>
+<dd>
+<ul>
+<li><code>m</code> element (later renamed to <code>mark</code>)
+<li><code>datagrid</code> element (later dropped)
+<li>outline algorithm
+<li>parsing algorithm (placeholder)
+<li>drag-and-drop (first specified; placeholder)
+</ul>
+
+<dt>2005-06
+<a href="http://web.archive.org/web/20050701075402/http://www.whatwg.org/specs/web-apps/current-work/">Web Applications 1.0</a>
+<dd>
+<ul>
+<li>undo history (placeholder)
+<li><code>History</code> interface (placeholder)
+<li><code>Location</code> interface (placeholder)
+</ul>
+
+<dt>2005-08
+<a href="http://web.archive.org/web/20050801085506/http://whatwg.org/specs/web-apps/current-work/">Web Applications 1.0</a>
+<dd>
+<ul>
+<li><b>browsing context</b> term
+<li>client-side persistent storage (placeholder)
+</ul>
+
+<dt>2005-09
+<a href="http://www.whatwg.org/specs/web-apps/2005-09-01/">Web Applications 1.0</a>
+<dd>
+<ul>
+<li><code>Storage</code> interface, <code>sessionStorage</code>, <code>globalStorage</code>
 </ul>
