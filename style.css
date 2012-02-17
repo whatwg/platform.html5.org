@@ -2,14 +2,14 @@ html {
   background: #DDE5D9 url(data:image/gif;base64,R0lGODlhBAAEAIAAANra2v///yH5BAAAAAAALAAAAAAEAAQAAAIFTGB4xlcAOw==) repeat 0 0;
   font-family: "Lucida Sans Unicode", "Lucida Sans", verdana, arial, helvetica;
 }
-#content, #footer {
+#contentCols, #footer, #content {
   font-size: 90%;
   border: solid 1px #CED4CA;
   background-color: #FFF;
   padding: 4px 4px 4px 20px;
   margin: 4px 10px 4px 10px;
 }
-#content {
+#contentCols {
   margin-top: 20px;
   padding: 20px;
   column-count: 3; 
@@ -49,9 +49,11 @@ a.tests:hover
 }
 h1 {
   background: #fff;
+}
+#contentCols h1 {
+  padding: 10px;
   margin-top: 4px;
   border: 1px dashed #ccc;
-  padding: 10px;
   column-span: all;
   -moz-column-span: all;
   -webkit-column-span: all;
@@ -82,7 +84,7 @@ dd {
   margin-left: 2em;
 }
 @media all and (max-width : 1200px) {
-  #content {
+  #contentCols {
     column-count: 2; 
     column-gap: 20px;
     column-fill: auto;
@@ -98,7 +100,7 @@ dd {
 }
 
 @media all and (max-width : 800px) {
-  #content {
+  #contentCols {
     column-count: 1; 
     column-gap: 10px;
     column-fill: auto;

@@ -1,6 +1,9 @@
 <!doctype html>
 <meta charset=utf-8>
 <title>A feature history of the modern Web Platorm</title>
+<style type="text/css" media="screen">
+  @import url(../style.css);
+</style>
 <style>
 body {
  font-family: sans-serif; font-size: 115%;
@@ -20,6 +23,8 @@ li p.note { margin-top: 8px; padding-left: 8px; }
 .note p:first-child, .warning p:first-child { margin-top: 0; }
 .note p:last-child, .warning p:last-child { margin-bottom: 0; }
 </style>
+
+<section id=content>
 <h1>A feature history of the modern Web Platform</h1>
 <p>When and where selected new Web-platform features
 were first specified, post-HTML4 and post-CSS2.1.
@@ -284,3 +289,16 @@ Web Forms 2.0
 <li><code>defer</code> attribute for the <code>script</code> element
 <li><code>async</code> attribute for the <code>script</code> element
 </ul>
+</section>
+
+<div id=footer>
+<a id=lastmod href="https://github.com/sideshowbarker/platform.html5.org/commits/master/history/index.html">changelog</a>
+</div>
+<a href="https://github.com/sideshowbarker/platform.html5.org"><img id=github src="https://d3nwyuy0nl342s.cloudfront.net/img/71eeaab9d563c2b3c590319b398dd35683265e85/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub"></a>
+<script>
+  function getLastModifiedDate() {
+    var d = new Date(document.lastModified);
+    return d.toISOString().substring(0,10);
+  }
+  document.getElementById("lastmod").innerHTML = "Last modified " + getLastModifiedDate();
+</script>
