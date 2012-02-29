@@ -2,7 +2,7 @@ html {
   background: #DDE5D9 url(data:image/gif;base64,R0lGODlhBAAEAIAAANra2v///yH5BAAAAAAALAAAAAAEAAQAAAIFTGB4xlcAOw==) repeat 0 0;
   font-family: "Lucida Sans Unicode", "Lucida Sans", verdana, arial, helvetica;
 }
-#contentCols, #footer, #content {
+#contentCols, #content, #footer, #legend {
   font-size: 90%;
   border: solid 1px #CED4CA;
   background-color: #FFF;
@@ -23,23 +23,23 @@ html {
   -webkit-column-fill: auto;   
 }
 a, a:hover {
-  color: #ff6900;
+  color: #BF4F00;
   text-decoration: none;
 }
-a:hover {
-  color: #777;
+a:hover, a:focus {
+   color: #5F6D7A;
 }
 a.caniuse,
 a.mdn,
 a.tests
 {
-  color: #ccc;
+  color: #5F6D7A;
 }
-a.caniuse:hover,
-a.mdn:hover,
-a.tests:hover
+a.caniuse:hover, a.caniuse:focus,
+a.mdn:hover, a.mdn:focus,
+a.tests:hover, a.tests:focus
 {
-  color: #005A9C;
+  color: #000000;
 }
 #github {
   position: absolute;
@@ -82,6 +82,25 @@ dt {
 }
 dd {
   margin-left: 2em;
+}
+#legend dt, #legend dd {
+  float: left;
+}
+#legend dd + dt {
+  clear: left;
+}
+div {
+  clear: left;
+}
+#legend dd {
+  margin-left: 8px;
+}
+#legend {
+  height: 110px;
+}
+h2 {
+  font-size: 14px;
+  color: #0B5B9D;
 }
 @media all and (max-width : 1200px) {
   #contentCols {

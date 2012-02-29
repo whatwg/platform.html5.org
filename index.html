@@ -246,6 +246,17 @@
   <a href="http://www.w3.org/TR/xml-names/">XML Namespaces</a>
 </dl>
 </section>
+<div id=legend>
+<h2>Legend</h2>
+<dl>
+  <dt>ⓦ</dt>
+  <dd><a id="caniuse" href="http://caniuse.com">When can I use...</a></dd>
+  <dt>ⓜ</dt>
+  <dd><a id="mdev" href="https://developer.mozilla.org/">MDN</a> (Mozilla Developer Network Reference)</dd>
+  <dt>ⓣ</dt>
+  <dd><span id="test">Tests</span>: associated test suite</dd>
+</dl>
+</div>
 <div id=footer>
 <a id=lastmod href="https://github.com/sideshowbarker/platform.html5.org/commits/master/index.html">changelog</a>
 </div>
@@ -256,4 +267,19 @@
     return d.toISOString().substring(0,10);
   }
   document.getElementById("lastmod").innerHTML = "Last modified " + getLastModifiedDate();
+  function labels() {
+    var can= document.getElementsByClassName('caniuse');
+    var mdev= document.getElementsByClassName('mdn');
+    var test= document.getElementsByClassName('tests');
+    for (var i=0;i<can.length;i++){
+      can[i].setAttribute('aria-labelledby','caniuse');
+    }
+    for (var i=0;i<mdev.length;i++){
+      mdev[i].setAttribute('aria-labelledby','mdev');
+    }
+    for (var i=0;i<test.length;i++){
+      test[i].setAttribute('aria-labelledby','test');
+    }
+  }
+document.addEventListener("DOMContentLoaded", labels, false);
 </script>
