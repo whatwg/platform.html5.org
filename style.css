@@ -14,13 +14,13 @@ html {
   padding: 20px;
   column-count: 3; 
   column-gap: 10px;
-  column-fill: auto;
+  column-fill: balance;
   -moz-column-count: 3; 
   -moz-column-gap: 10px;
-  -moz-column-fill: auto; 
+  -moz-column-fill: balance; 
   -webkit-column-count: 3; 
   -webkit-column-gap: 10px;
-  -webkit-column-fill: auto;   
+  -webkit-column-fill: balance;   
 }
 a, a:hover {
   color: #BF4F00;
@@ -106,15 +106,15 @@ h2 {
   #contentCols {
     column-count: 2; 
     column-gap: 20px;
-    column-fill: auto;
+    column-fill: balance;
 
     -moz-column-count: 2; 
     -moz-column-gap: 20px;
-    -moz-column-fill: auto; 
+    -moz-column-fill: balance; 
 
     -webkit-column-count: 2; 
     -webkit-column-gap: 20px;
-    -webkit-column-fill: auto;   
+    -webkit-column-fill: balance;   
   }
 }
 
@@ -122,14 +122,14 @@ h2 {
   #contentCols {
     column-count: 1; 
     column-gap: 10px;
-    column-fill: auto;
+    column-fill: balance;
 
     -moz-column-count: 1; 
     -moz-column-gap: 10px;
-    -moz-column-fill: auto; 
+    -moz-column-fill: balance; 
 
     -webkit-column-count: 1; 
     -webkit-column-gap: 10px;
-    -webkit-column-fill: auto;   
+    -webkit-column-fill: balance;   
   }
 }
