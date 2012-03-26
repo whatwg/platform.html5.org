@@ -92,15 +92,27 @@ dd {
 div {
   clear: left;
 }
+#legend dt {
+}
 #legend dd {
   margin-left: 8px;
 }
 #legend {
-  height: 110px;
+  height: 150px;
 }
 h2 {
   font-size: 14px;
   color: #0B5B9D;
+}
+.pleaseUse,
+.pleaseCaution {
+  font-size: 120%;
+}
+.pleaseUse {
+  color: #60AC39;
+}
+.pleaseCaution {
+  color: #FA0;
 }
 @media all and (max-width : 1200px) {
   #contentCols {
