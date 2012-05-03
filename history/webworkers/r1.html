@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html lang=en-US-x-hixie>
+ <head>
+  <title>HTML 5</title>
+  <link href="/style/specification" rel=stylesheet>
+  <link href="/images/icon" rel=icon>
+
+ <body class=draft>
+  <div class=head>
+   <p><a class=logo href="http://www.whatwg.org/" rel=home><img alt=WHATWG
+    src="/images/logo"></a></p>
+
+   <h1 id=web-workers>Web Workers</h1>
+
+   <h2 class="no-num no-toc" id=draft>Draft Recommendation &mdash; 9 July
+    2008</h2>
+
+   <p>You can take part in this work. <a
+    href="http://www.whatwg.org/mailing-list">Join the working group's
+    discussion list.</a></p>
+
+   <p><strong>Web designers!</strong> We have a <a
+    href="http://blog.whatwg.org/faq/">FAQ</a>, a <a
+    href="http://forums.whatwg.org/">forum</a>, and a <a
+    href="http://www.whatwg.org/mailing-list#help">help mailing list</a> for
+    you!</p>
+
+   <dl>
+    <dt>This version:
+
+    <dd><a
+     href="http://www.whatwg.org/specs/web-workers/current-work/">http://www.whatwg.org/specs/web-workers/current-work/</a>
+
+    <dt>Version history:
+
+    <dd>Twitter messages (non-editorial changes only): <a
+     href="http://twitter.com/WHATWG">http://twitter.com/WHATWG</a>
+
+    <dd>Commit-Watchers mailing list: <a
+     href="http://lists.whatwg.org/listinfo.cgi/commit-watchers-whatwg.org">http://lists.whatwg.org/listinfo.cgi/commit-watchers-whatwg.org</a>
+
+    <dd>Interactive Web interface: <a
+     href="http://html5.org/tools/web-workers-tracker">http://html5.org/tools/web-workers-tracker</a>
+
+    <dd>Subversion interface: <a
+     href="http://svn.whatwg.org/webworkers/">http://svn.whatwg.org/webworkers/</a>
+
+    <dt>Issues:
+
+    <dd>To send feedback: <a
+     href="http://www.whatwg.org/mailing-list">whatwg@whatwg.org</a>
+
+    <dd>To view and vote on feedback: <a
+     href="http://www.whatwg.org/issues/">http://www.whatwg.org/issues/</a>
+
+    <dt>Editor:
+
+    <dd>Ian Hickson, Google, ian@hixie.ch
+   </dl>
+
+   <p class=copyright>&copy; Copyright 2004-2008 Apple Computer, Inc.,
+    Mozilla Foundation, and Opera Software ASA.</p>
+
+   <p class=copyright>You are granted a license to use, reproduce and create
+    derivative works of this document.</p>
+  </div>
+
+  <hr>
+
+  <h2 class="no-num no-toc" id=abstract>Abstract</h2>
+
+  <p>This specification evolves HTML and its related APIs to ease the
+   authoring of Web-based applications. Additions include the context menus,
+   a direct-mode graphics canvas, inline popup windows, and server-sent
+   events. Heavy emphasis is placed on keeping the language backwards
+   compatible with existing legacy user agents and on keeping user agents
+   backwards compatible with existing legacy documents.
+
+  <h2 class="no-num no-toc" id=status>Status of this document</h2>
+
+  <p><strong>This is a work in progress!</strong> This document is changing
+   on a daily if not hourly basis in response to comments and as a general
+   part of its development process. Comments are very welcome, please send
+   them to <a href="mailto:whatwg@whatwg.org">whatwg@whatwg.org</a>. Thank
+   you.
+
+  <p>The current focus is in developing a first draft proposal.
+
+  <p>Implementors should be aware that this specification is not stable.
+   <strong>Implementors who are not taking part in the discussions are likely
+   to find the specification changing out from under them in incompatible
+   ways.</strong> Vendors interested in implementing this specification
+   before it eventually reaches the call for implementations should join the
+   <a href="/mailing-list">WHATWG mailing list</a> and take part in the
+   discussions.
+
+  <p>This specification is also being produced by the <a
+   href="http://www.w3.org/html/wg">W3C HTML WG</a>. The two specifications
+   are identical from the table of contents onwards.
+
+  <h2 class="no-num no-toc" id=contents>Table of contents</h2>
+  <!--begin-toc-->
+
+  <ul class=toc>
+   <li><a href="#introduction"><span class=secno>1. </span>Introduction</a>
+    <ul class=toc>
+     <li><a href="#background"><span class=secno>1.1 </span>Background</a>
+
+     <li><a href="#scope"><span class=secno>1.2 </span>Scope</a>
+
+     <li><a href="#relationships"><span class=secno>1.3 </span>Relationships
+      to other specifications</a>
+      <ul class=toc>
+       <li><a href="#relationship"><span class=secno>1.3.1
+        </span>Relationship to HTML5</a>
+
+       <li><a href="#relationship0"><span class=secno>1.3.2
+        </span>Relationship to ECMAScript</a>
+      </ul>
+
+     <li><a href="#conformance"><span class=secno>1.4 </span>Conformance
+      requirements</a>
+      <ul class=toc>
+       <li><a href="#dependencies"><span class=secno>1.4.1
+        </span>Dependencies</a>
+      </ul>
+
+     <li><a href="#terminology"><span class=secno>1.5 </span>Terminology</a>
+    </ul>
+
+   <li class=no-num><a href="#references">References</a>
+
+   <li class=no-num><a href="#acknowledgements">Acknowledgements</a>
+  </ul>
+  <!--end-toc-->
+
+  <hr>
+
+  <h2 id=introduction><span class=secno>1. </span>Introduction</h2>
+
+  <h3 id=background><span class=secno>1.1 </span>Background</h3>
+
+  <p><em>This section is non-normative.</em>
+
+  <h3 id=scope><span class=secno>1.2 </span>Scope</h3>
+
+  <p><em>This section is non-normative.</em>
+
+  <h3 id=relationships><span class=secno>1.3 </span>Relationships to other
+   specifications</h3>
+
+  <h4 id=relationship><span class=secno>1.3.1 </span>Relationship to HTML5</h4>
+
+  <p><em>This section is non-normative.</em>
+
+  <h4 id=relationship0><span class=secno>1.3.2 </span>Relationship to
+   ECMAScript</h4>
+
+  <p><em>This section is non-normative.</em>
+
+  <h3 id=conformance><span class=secno>1.4 </span>Conformance requirements</h3>
+
+  <p>All diagrams, examples, and notes in this specification are
+   non-normative, as are all sections explicitly marked non-normative.
+   Everything else in this specification is normative.
+
+  <p>The key words "MUST", "MUST NOT", "REQUIRED", <!--"SHALL", "SHALL
+  NOT",-->
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in the
+   normative parts of this document are to be interpreted as described in
+   RFC2119. For readability, these words do not appear in all uppercase
+   letters in this specification. <a href="#refsRFC2119">[RFC2119]</a></p>
+  <!-- XXX but they should be
+  marked up -->
+
+  <p>Requirements phrased in the imperative as part of algorithms (such as
+   "strip any leading space characters" or "return false and abort these
+   steps") are to be interpreted with the meaning of the key word ("must",
+   "should", "may", etc) used in introducing the algorithm.
+
+  <p>Some conformance requirements are phrased as requirements on attributes,
+   methods or objects. Such requirements are to be interpreted as
+   requirements on user agents.
+
+  <p>Conformance requirements phrased as algorithms or specific steps may be
+   implemented in any manner, so long as the end result is equivalent. (In
+   particular, the algorithms defined in this specification are intended to
+   be easy to follow, and not intended to be performant.)
+
+  <p>The only conformance class defined by this specification is user agents.
+
+  <p>User agents may impose implementation-specific limits on otherwise
+   unconstrained inputs, e.g. to prevent denial of service attacks, to guard
+   against running out of memory, or to work around platform-specific
+   limitations.
+
+  <h4 id=dependencies><span class=secno>1.4.1 </span>Dependencies</h4>
+
+  <p>This specification relies on several other underlying specifications.
+
+  <dl>
+   <dt>HTML5
+
+   <dd>
+    <p>Many fundamental concepts from HTML5 are used by this specification.
+     <a href="#refsHTML5">[HTML5]</a></p>
+
+   <dt>ECMAScript
+
+   <dd>
+    <p>This specification is intended to be used with JavaScript as the
+     scripting language. <a href="#refsJS">[JS]</a></p>
+
+   <dt>WebIDL
+
+   <dd>
+    <p>The IDL blocks in this specification use the semantics of the WebIDL
+     specification. <a href="#refsWebIDL">[WebIDL]</a></p>
+  </dl>
+
+  <h3 id=terminology><span class=secno>1.5 </span>Terminology</h3>
+
+  <p>For simplicity, terms such as <em>shown</em>, <em>displayed</em>, and
+   <em>visible</em> might sometimes be used when referring to the way a
+   document is rendered to the user. These terms are not meant to imply a
+   visual medium; they must be considered to apply to other media in
+   equivalent ways.
+
+  <p>The construction "a <code>Foo</code> object", where <code>Foo</code> is
+   actually an interface, is sometimes used instead of the more accurate "an
+   object implementing the interface <code>Foo</code>".
+
+  <p>The term DOM is used to refer to the API set made available to scripts
+   in Web applications, and does not necessarily imply the existence of an
+   actual <code>Document</code> object or of any other <code>Node</code>
+   objects as defined in the DOM Core specifications. <a
+   href="#refsDOM3CORE">[DOM3CORE]</a>
+
+  <p>A DOM attribute is said to be <em>getting</em> when its value is being
+   retrieved (e.g. by author script), and is said to be <em>setting</em> when
+   a new value is assigned to it.
+
+  <p>If a DOM object is said to be <dfn id=live>live</dfn>, then that means
+   that any attributes returning that object must always return the same
+   object (not a new object each time), and the attributes and methods on
+   that object must operate on the actual underlying data, not a snapshot of
+   the data.
+
+  <h2 class=no-num id=references>References</h2>
+
+  <p class=big-issue>This section will be written in a future
+   draft.<!--XXX-->
+
+  <h2 class=no-num id=acknowledgements>Acknowledgements</h2>
+  <!-- ACKS -->
+
+  <p>Thanks to Maciej Stachowiak and Mike Smith for their useful and
+   substantial comments.
