@@ -1,0 +1,195 @@
+<!doctype html>
+<title>Specifications</title>
+<meta charset=utf-8>
+<style>
+table { border: 2px solid #0B5B9D; }
+th {
+  border-bottom: 2px solid #0B5B9D;
+  color: #0B5B9D
+}
+body { font-family: sans-serif }
+tr td:first-child {
+  width: 14em;
+  border: 2px solid white;
+}
+td {
+  border: 2px solid white;
+  padding: 8px;
+  vertical-align: top;
+}
+tr:nth-child(even) {background: #eee}
+tr:nth-child(odd) {background: #FFF}
+a {
+  text-decoration: none;
+  color: #BF4F00;
+ }
+.ready { background-color: palegreen } 
+.notready { background-color: yellow } 
+.highlight { background-color: yellow } 
+</style>
+<table>
+<thead>
+<th>Spec name</th>
+<th>Description</th>
+<th id="rec-date">Rec date</th>
+<th id="browsers">Browsers</th>
+</thead>
+<tr><td id="animation-timing"><a href="http://www.w3.org/TR/animation-timing" title="#animation-timing">Animation Timing</a><td>For controlling the update rate of an animation, depending (for example) on whether a page is currently in a background tab, or based on the current CPU load, and so on.</td><td>Before HTML5</td><td class="ready">IE FF WebKit</td></tr>
+<!-- * <tr><td id="ambient-light"><a href="http://www.w3.org/TR/ambient-light" title="#ambient-light">Ambient Light Events</a><td>For receiving events that correspond to a light sensor.</td><td></td><td></td></tr> -->
+<tr><td id="battery-status"><a href="http://www.w3.org/TR/battery-status" title="#battery-status">Battery Status</a><td>For obtaining information about the battery status of a hosting device and associated auxiliary devices.</td><td>Before HTML5</td><td class="notready">FF WebKit</td></tr>
+<!-- * <tr><td id="calendar-api"><a href="http://www.w3.org/TR/calendar-api" title="#calendar-api">Calendar API</a><td>For obtaining read access to a user's calendaring service.</td><td></td><td></td></tr> -->
+<!-- * <tr><td id="clipboard-apis"><a href="http://www.w3.org/TR/clipboard-apis" title="#clipboard-apis">Clipboard API and Events</a><td>For clipboard operations such as copy, cut and paste.</td><td></td><td></td></tr> -->
+<tr><td id="csp"><a href="https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-specification.dev.html" title="#csp">Content Security Policy</a><td>For declaring a set of content restrictions for a Web resource, and transmitting the policy from a server to a client where the policy is enforced.</td><td></td><td></td></tr>
+<tr><td id="cors"><a href="http://dvcs.w3.org/hg/cors/raw-file/tip/Overview.html" title="#cors">Cross-Origin Resource Sharing</a><td>For using XMLHttpRequest across different origins (domains)</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
+<tr><td id="crypto"><a href="http://dvcs.w3.org/hg/domcrypt/raw-file/tip/Overview.html" title="#crypto">Crypto</a><td>For generating asymmetric key pairs, encrypting, decrypting (asymmetric and symmetric crypto), signing, verifying, HMAC, and hashing data (via a variety of algorithms).</td><td>Unknown</td><td class="notready">[none]</td></tr>
+<tr><td id="css-animations"><a href="http://dev.w3.org/csswg/css3-animations/" title="#css-animations">CSS Animations</a><td>For animating the values of CSS properties over time, using keyframes.</td><td></td><td></td></tr>
+<tr><td id="css-color"><a href="http://dev.w3.org/csswg/css3-color/" title="#css-color">CSS Color</a><td>For controlling the color and opacity of text, backgrounds, borders, and other parts of elements in a document.</td><td></td><td></td></tr>
+<tr><td id="css-backgrounds"><a href="http://dev.w3.org/csswg/css3-background/" title="#css-backgrounds">CSS Backgrounds and Borders</a><td>For controlling presentation of backgrounds and borders (including using images for backgrounds, using multiple backgrounds, rounded corners, shadows.</td><td></td><td></td></tr>
+<tr><td id="css-fonts"><a href="http://dev.w3.org/csswg/css3-fonts/" title="#css-fonts">CSS Fonts</a><td>For specifying font properties and controlling how font resources are loaded dynamically (@font-face).</td><td></td><td></td></tr>
+<tr><td id="css-images"><a href="http://dev.w3.org/csswg/css3-images/" title="#css-images">CSS Images</a><td>For representing 2D images, for example as a list of URLs denoting fallbacks, or as gradients.</td><td></td><td></td></tr>
+<tr><td id="css-mq"><a href="http://www.w3.org/TR/css3-mediaqueries/" title="#css-mq">CSS Media Queries</a><td>For tailoring presentation based on media types.</td><td></td><td></td></tr>
+<tr><td id="css-multicol"><a href="http://dev.w3.org/csswg/css3-multicol/" title="#css-multcol">CSS Multi-column Layout</a><td>For flowing content into multiple columns.</td><td></td><td></td></tr>
+<tr><td id="css-selectors"><a href="http://www.w3.org/TR/css3-selectors/" title="#css-selectors">CSS Selectors</a><td>For selecting nodes from the DOM by matching against a group of selectors.</td><td></td><td></td></tr>
+<tr><td id="css-text"><a href="http://dev.w3.org/csswg/css3-text/" title="#css-text">CSS Text</a><td>For manipulating text (for example, controlling hyphenation and adding text shadows).</td><td></td><td></td></tr>
+<tr><td id="css-transforms"><a href="http://www.w3.org/TR/css3-2d-transforms/" title="#css-transforms">CSS Transforms</a><td>For translating, rotating, and scaling elements in two-dimensional or three-dimensional space.</td><td></td><td></td></tr>
+<tr><td id="css-transitions"><a href="http://dev.w3.org/csswg/css3-transitions/" title="#css-transitions">CSS Transitions</a><td>For making property changes in CSS values occur smoothly over a specified duration.</td><td></td><td></td></tr>
+<tr><td id="css-ui"><a href="http://dev.w3.org/csswg/css3-ui/" title="#css-ui">CSS UI</a><td>For styling user-interface related states, element fragments, properties and values (for example, box sizing, pointer events, and text overflow).</td><td></td><td></td></tr>
+<tr><td id="orientation-event"><a href="http://www.w3.org/TR/orientation-event" title="#orientation-event">DeviceOrientation</a><td>For obtaining information about the physical orientation and motion of a hosting device.</td><td>Before HTML5</td><td class="notready">WebKit</td></tr>
+<!-- * <tr><td id="dom-events"><a href="http://dev.w3.org/2006/webapi/DOM-Level-3-Events/html/DOM3-Events.html" title="#dom-events">DOM Events</a><td>For controlling registration of event listeners and event flow.</td><td></td><td></td></tr> -->
+<tr><td id="encrypted-media"><a href="http://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html" title="#encrypted-media">Encrypted Media Extensions</a><td>For enabling streaming playback of encrypted video and audio content using license-key exchange.</td><td>After HTML5</td><td class="notready">[none]</td></tr>
+<tr><td id="FileAPI"><a href="http://www.w3.org/TR/FileAPI" title="#FileAPI">File API</a><td>For representing file objects in Web applications, as well as programatically selecting them and accessing their data.</td><td>Before HTML5</td><td class="ready">FF WebKit Opera</td></tr>
+<!-- * <tr><td id="file-system-api"><a href="http://www.w3.org/TR/file-system-api" title="#file-system-api">File API: Directories and System</a><td>API to navigate file system hierarchies, and defines a means by which a user agent may expose sandboxed sections of a user's local filesystem to Web applications. It builds on <q>File API: Writer</q>, which in turn built on <q>File API</q>, each adding a different kind of functionality.</td><td></td><td></td></tr> -->
+<!-- * <tr><td id="file-writer-api"><a href="http://www.w3.org/TR/file-writer-api" title="#file-writer-api">File API: Writer</a><td>For writing to files from Web applications.</td><td></td><td></td></tr> -->
+<tr><td id="fullscreen"><a href="http://www.w3.org/TR/fullscreen" title="#fullscreen">Fullscreen</a><td>For presenting Web applications using the user’s entire screen.</td><td>Before HTML5</td><td class="notready">FF WebKit</td></tr>
+<tr><td id="gamepad"><a href="http://www.w3.org/TR/gamepad" title="#gamepad">Gamepad</a><td>For representing gamepad devices in Web applications.</td><td>Before HTML5</td><td class="notready">FF WebKit</td></tr>
+<tr><td id="geolocation-API"><a href="http://www.w3.org/TR/geolocation-API" title="#geolocation-API">Geolocation API</a><td>For obtaining access to geographical location information associated with a hosting device.</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
+<tr><td id="hr-time"><a href="http://www.w3.org/TR/hr-time" title="#hr-time">High Resolution Time</a><td>For providing the current time in sub-millisecond resolution and such that it is not subject to system clock skew or adjustments.</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
+<tr><td id="2dcontext"><a href="http://www.w3.org/TR/2dcontext" title="#2dcontext">HTML Canvas 2D Context</a><td>For drawing two-dimensional graphics.</td><td>With HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
+<tr><td id="html-media-capture"><a href="http://www.w3.org/TR/html-media-capture" title="#html-media-capture">HTML Media Capture</a><td>For accessing the audio, image and video capture capabilities of a hosting device (markup-based; for example, <code>&lt;input type="file" accept="image/*" <span class="highlight">capture="camera"</span>></code>)</td><td>With HTML5</td><td class="notready">FF WebKit</td></tr>
+<!-- * <tr><td id="microdata"><a href="http://www.w3.org/TR/microdata" title="#microdata">HTML Microdata</a><td>Defines the HTML microdata mechanism. This mechanism allows machine-readable data to be embedded in HTML documents in an easy-to-write manner, with an unambiguous parsing model. It is compatible with numerous other data formats including RDF and JSON.</td><td></td><td></td></tr> -->
+<tr><td id="IndexedDB"><a href="http://www.w3.org/TR/IndexedDB" title="#IndexedDB">Indexed Database API</a><td>For enabling persistent per-application client-side data storage using an indexed database.</td><td>Before HTML5</td><td class="ready">IE FF WebKit</td></tr>
+<tr><td id="getusermedia"><a href="http://dev.w3.org/2011/webrtc/editor/getusermedia.html" title="#getusermedia">Media Capture and Streams</a><td>For programatically accessing the audio and video capture capabilities of a hosting device.</td><td>Before HTML5</td><td class="ready">IE FF WebKit</td></tr>
+<tr><td id="media-fragments"><a href="http://www.w3.org/TR/media-frags/" title="#media-fragments">Media Fragments</a><td>For clipping video and audio content in order to play a particular time range.</td><td></td><td></td></tr>
+<tr><td id="media-source"><a href="http://dvcs.w3.org/hg/html-media/raw-file/tip/media-source/media-source.html" title="#media-source">Media Source Extensions</a><td>For generating media streams for playback; for use use cases such as adaptive streaming and time shifting live streams.</td><td>With HTML5</td><td class="notready">[none]</td></tr>
+<tr><td id="navigation-timing"><a href="http://www.w3.org/TR/navigation-timing" title="#navigation-timing">Navigation Timing</a><td>For accessing timing information related to navigation and elements.</td><td>Before HTML5</td><td class="ready">IE FF WebKit</td></tr>
+<tr><td id="page-visibility"><a href="http://www.w3.org/TR/page-visibility" title="#page-visibility">Page Visibility</a><td>For programatically determining the current visibility state of a page in order to develop power-efficient and CPU-efficient Web applications.</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
+<tr><td id="performance-timeline"><a href="http://www.w3.org/TR/performance-timeline" title="#performance-timeline">Performance Timeline</a><td>For accessing timing information related to navigation and elements.</td><td>Before HTML5</td><td class="ready">IE FF WebKit</td></tr>
+<tr><td id="pointerlock"><a href="http://www.w3.org/TR/pointerlock" title="#pointerlock">Pointer Lock</a><td>For access to raw mouse-movement data while locking the target of mouse events to a single element and removing the cursor from view.</td><td>Before HTML5</td><td class="notready">FF WebKit</td></tr>
+<tr><td id="progress-events"><a href="http://dvcs.w3.org/hg/progress/raw-file/tip/Overview.html" title="#progress-events">Progress Events</a><td>For measuring progress of a request made through the XMLHttpRequest interface.</td><td></td><td></td></tr>
+<tr><td id="proximity"><a href="http://www.w3.org/TR/proximity" title="#proximity">Proximity Events</a><td>For receiving events that correspond to a proximity sensor detecting the presence of a physical object. </td><td>Before HTML5</td><td class="notready">FF WebKit</td></tr>
+<tr><td id="quota-api"><a href="http://www.w3.org/TR/quota-api" title="#quota-api">Quota Management API</a><td>For managing usage and availability of local-storage resources, and granting Web applications permission to use more local space, temporarily or persistently.</td><td>Before HTML5</td><td class="notready">WebKit</td></tr>
+<tr><td id="resource-timing"><a href="http://www.w3.org/TR/resource-timing" title="#resource-timing">Resource Timing</a><td>For accessing timing information related to HTML elements.</td><td>Before HTML5</td><td class="notready">IE</td></tr>
+<tr><td id="screen-orientation"><a href="http://www.w3.org/TR/screen-orientation" title="#screen-orientation">Screen Orientation API</a><td>For reading the current screen-orientation state, being informed when the screen-orientation state changes, and locking the screen orientation to a specific state.</td><td>Before HTML5</td><td class="notready">FF</td></tr>
+<!-- * <tr><td id="selectors-api"><a href="http://www.w3.org/TR/selectors-api" title="#selectors-api">Selectors API Level 1</a><td>Defines methods for retrieving Element nodes from the DOM by matching against a group of selectors.</td><td></td><td></td></tr> -->
+<tr><td id="selectors-api"><a href="http://www.w3.org/TR/selectors-api2" title="#selectors-api">Selectors API</a><td>For programatically retrieving element nodes from the DOM by matching against a group of selectors, and for testing if a given element matches a particular selector.</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
+<tr><td id="eventsource"><a href="http://www.w3.org/TR/eventsource" title="#eventsource">Server-Sent Events</a><td>For opening an HTTP connection for receiving push notifications from a server in the form of DOM events.</td><td>Before HTML5</td><td class="ready">FF WebKit Opera</td></tr>
+<!-- * <tr><td id="contacts-api"><a href="http://www.w3.org/TR/contacts-api" title="#contacts-api">Contacts API</a><td>Defines an API that provides access to a user's unified address book.</td><td></td><td></td></tr> -->
+<tr><td id="netinfo-api"><a href="http://www.w3.org/TR/netinfo-api" title="#netinfo-api">Network Information API</a><td>For accessing the underlying network information (connection info) of a hosting device.</td><td>Before HTML5</td><td class="notready">FF WebKit</td></tr>
+<tr><td id="websockets"><a href="http://www.w3.org/TR/websockets" title="#websockets">Web Sockets API</a><td>For two-way full-duplex communication with a remote host.</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
+<tr><td id="touch-events"><a href="http://www.w3.org/TR/touch-events" title="#touch-events">Touch Events</a><td>For representing one or more points of contact with a touch-sensitive surface, and changes of those points with respect to the surface and any DOM elements displayed upon it or associated with it.</td><td>Unknown</td><td class="notready">WebKit</td></tr>
+<!-- * <tr><td id="url"><a href="http://www.w3.org/TR/url" title="#url">URL</a><td>For constructing, parsing, and resolving URLs.</td><td></td><td></td></tr> -->
+<tr><td id="typed-array"><a href="http://www.khronos.org/registry/typedarray/specs/latest/" title="#typed-array">Typed Array</a><td>For accessing binary data in Web applications.</td><td></td><td></td></tr>
+<tr><td id="user-timing"><a href="http://www.w3.org/TR/user-timing" title="#user-timing">User Timing</a><td>For measuring the performance of Web applications by providing access to high-precision timestamps.</td><td>Before HTML5</td><td class="notready">IE</td></tr>
+<tr><td id="vibration"><a href="http://www.w3.org/TR/vibration" title="#vibration">Vibration API</a><td>For accessing the vibration mechanism of a hosting device.</td><td>Before HTML5</td><td class="notready">FF WebKit</td></tr>
+<tr><td id="webgl"><a href="https://www.khronos.org/registry/webgl/specs/latest/" title="#webgl">WebGL</a><td>For drawing three-dimensional graphics.</td><td>Before HTML5</td><td class="ready">FF WebKit Opera</td></tr>
+<tr><td id="webaudio"><a href="http://www.w3.org/TR/webaudio" title="#webaudio">Web Audio API</a><td>For processing and synthesizing sampled audio.</td><td>In HTML5 timeframe</td><td class="notready">WebKit</td></tr>
+<!-- * <tr><td id="web-intents"><a href="http://www.w3.org/TR/web-intents" title="#web-intents">Web Intents</a><td>Defines a service discovery and light-weight RPC mechanism for Web apps called Web Intents. Defines DOM interfaces and markup used by client and service pages to create, receive, and reply to Web Intents messages, and the procedures the User Agent carries out to facilitate that process.</td><td></td><td></td></tr> -->
+<tr><td id="webmessaging"><a href="http://www.w3.org/TR/webmessaging" title="#webmessaging">Web Messaging</a><td>For cross-document communication among documents in different browsing contexts (windows, frames, and tabs).</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
+<tr><td id="notifications"><a href="http://www.w3.org/TR/notifications" title="#notifications">Web Notifications</a><td>For displaying simple notifications to the user, outside of a browser.</td><td>Before HTML5</td><td class="notready">FF WebKit</td></tr>
+<tr><td id="webstorage"><a href="http://www.w3.org/TR/webstorage" title="#webstorage">Web Storage</a><td>For enabling persistent per-application client-side data storage using simple key-value pairs.</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
+<tr><td id="workers"><a href="http://www.w3.org/TR/workers" title="#workers">Web Workers</a><td>For spawning worker processes to run in parallel in the background of a Web application; allows for thread-like operations with message passing as the coordination mechanism.</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
+<!-- * <tr><td id="webdriver"><a href="http://www.w3.org/TR/webdriver" title="#webdriver">WebDriver</a><td>Defines the WebDriver API, a platform-and language-neutral interface that allows programs or scripts to introspect into, and control the behaviour of, a Web browser. The WebDriver API is primarily intended to allow developers to write tests that automate a browser from a separate controlling process, but may also be implemented in such a way as to allow in-browser scripts to control a browser. The WebDriver API is defined by a set of interfaces to discover and manipulate DOM elements on a page, and to control the behaviour of the containing browser.  also includes a non-normative reference useful for browser vendors.</td><td></td><td></td></tr> -->
+<tr><td id="webrtc"><a href="http://www.w3.org/TR/webrtc" title="#webrtc">WebRTC</a><td>For enabling real-time audio communication and video communication over the Web.</td><td>In HTML5 timeframe</td><td class="notready">WebKit</td></tr>
+<tr><td id="webvtt"><a href="http://dev.w3.org/html5/webvtt/" title="#webvtt">WebVTT</a><td>For providing external text tracks for video and audio content (for example, subtitles and captions).</td><td></td><td></td></tr>
+<tr><td id="woff"><a href="http://dev.w3.org/webfonts/WOFF/spec/" title="#woff">WOFF</a><td>For formatting fonts for use on the Web (for example, in conjunction with @font-face rules).</td><td></td><td></td></tr>
+<tr><td id="XMLHttpRequest"><a href="http://www.w3.org/TR/XMLHttpRequest" title="#XMLHttpRequest">XMLHttpRequest</a><td>For enabling asynchronous data communication over the Web.</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
+</table>
+<script>
+var ths = document.getElementsByTagName('TH');
+var last = null;
+for (var i = 0; i < ths.length; i += 1) {
+  ths[i].onclick = function (event) {
+    var trs = event.target.parentNode.parentNode.parentNode.tBodies[0].getElementsByTagName('TR');
+    var cells = [];
+    for (var j = trs.length-1; j >= 0; j -= 1) {
+      cells.push(trs[j].cells[event.target.cellIndex]);
+      trs[j].parentNode.removeChild(trs[j]);
+    }
+    cells.sort(function cmp(a, b) {
+      if (a.hasChildNodes() && (a.firstChild.nodeName == 'TIME'))
+         a_t1 = a.firstChild.getAttribute('datetime');
+      else if (a.hasAttribute('id'))
+         a_t1 = a.getAttribute('id');
+      else
+         a_t1 = a.textContent;
+      a_t2 = a.parentNode.cells[0].getAttribute('id');
+      if (b.hasChildNodes() && (b.firstChild.nodeName == 'TIME'))
+         b_t1 = b.firstChild.getAttribute('datetime');
+      else if (b.hasAttribute('id'))
+         b_t1 = b.getAttribute('id');
+      else
+         b_t1 = b.textContent;
+      b_t2 = b.parentNode.cells[0].getAttribute('id');
+      var result = a_t1 > b_t1 ? 1 : a_t1 < b_t1 ? -1 : a_t2 > b_t2 ? 1 : a_t2 < b_t2 ? -1 : 0;
+      if (event.target.getAttribute('aria-sort') == 'ascending')
+        return 1-result;
+      return result;
+    });
+    for (var j = 0; j < cells.length; j += 1) {
+      event.target.parentNode.parentNode.parentNode.tBodies[0].appendChild(cells[j].parentNode);
+    }
+    if (event.target.getAttribute('aria-sort') == 'ascending') {
+      event.target.setAttribute('aria-sort', 'descending');
+    } else {
+      if (last)
+        last.removeAttribute('aria-sort');
+      event.target.setAttribute('aria-sort', 'ascending');
+    }
+    last = event.target;
+  };
+}
+
+var query = window.location.search.substring(1); 
+var vars = query.split("&");
+for (var i=0; i<vars.length; i++) {
+  var pair = vars[i].split("=");
+  if (pair[0] == 'sort') {
+    header = pair[1].replace('+',' ');
+    for (var i = 0; i < ths.length; i += 1) {
+      if (ths[i].innerHTML == header) {
+        var event = window.document.createEvent('MouseEvent');
+        event.initEvent("click", false, true); 
+        ths[i].dispatchEvent(event);
+      }
+    }
+  }
+}
+var numberRows = function () {
+  var trs = document.getElementsByTagName('TR');
+  for (var j = 0; j < trs.length; j++) {
+    if (trs[j].parentNode.localName !== "thead") {
+      var td = document.createElement("TD");
+      if (j < 10) {
+        td.textContent = "0";
+      }
+      td.textContent += j.toString();
+      trs[j].appendChild(td);
+    } else {
+      var th = document.createElement("TH");
+      th.textContent = '#';
+      trs[j].appendChild(th);
+    }
+  }
+}
+numberRows();
+var td = document.querySelectorAll("tr td:nth-child(3)");
+for ( var i = 0; i < td.length; i++ ) {
+    td[i].style.display = "none";
+}
+td = document.querySelectorAll("tr td:nth-child(4)");
+for ( var i = 0; i < td.length; i++ ) {
+    td[i].style.display = "none";
+}
+document.getElementById("rec-date").style.display = "none";
+document.getElementById("browsers").style.display = "none";
+</script>
