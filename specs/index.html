@@ -23,9 +23,9 @@ a {
   text-decoration: none;
   color: #BF4F00;
  }
-.ready { background-color: palegreen } 
-.notready { background-color: yellow } 
-.highlight { background-color: yellow } 
+.ready { background-color: palegreen }
+.notready { background-color: yellow }
+.highlight { background-color: yellow }
 </style>
 <table>
 <thead>
@@ -40,7 +40,7 @@ a {
 <!-- * <tr><td id="calendar-api"><a href="http://www.w3.org/TR/calendar-api" title="#calendar-api">Calendar API</a><td>For obtaining read access to a user's calendaring service.</td><td></td><td></td></tr> -->
 <!-- * <tr><td id="clipboard-apis"><a href="http://www.w3.org/TR/clipboard-apis" title="#clipboard-apis">Clipboard API and Events</a><td>For clipboard operations such as copy, cut and paste.</td><td></td><td></td></tr> -->
 <tr><td id="csp"><a href="https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-specification.dev.html" title="#csp">Content Security Policy</a><td>For declaring a set of content restrictions for a Web resource, and transmitting the policy from a server to a client where the policy is enforced.</td><td></td><td></td></tr>
-<tr><td id="cors"><a href="http://dvcs.w3.org/hg/cors/raw-file/tip/Overview.html" title="#cors">Cross-Origin Resource Sharing</a><td>For using XMLHttpRequest across different origins (domains)</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
+<tr><td id="cors"><a href="http://fetch.spec.whatwg.org/" title="#cors">Cross-Origin Resource Sharing</a><td>For using XMLHttpRequest across different origins (domains)</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
 <tr><td id="crypto"><a href="http://dvcs.w3.org/hg/domcrypt/raw-file/tip/Overview.html" title="#crypto">Crypto</a><td>For generating asymmetric key pairs, encrypting, decrypting (asymmetric and symmetric crypto), signing, verifying, HMAC, and hashing data (via a variety of algorithms).</td><td>Unknown</td><td class="notready">[none]</td></tr>
 <tr><td id="css-animations"><a href="http://dev.w3.org/csswg/css3-animations/" title="#css-animations">CSS Animations</a><td>For animating the values of CSS properties over time, using keyframes.</td><td></td><td></td></tr>
 <tr><td id="css-color"><a href="http://dev.w3.org/csswg/css3-color/" title="#css-color">CSS Color</a><td>For controlling the color and opacity of text, backgrounds, borders, and other parts of elements in a document.</td><td></td><td></td></tr>
@@ -60,7 +60,7 @@ a {
 <tr><td id="FileAPI"><a href="http://www.w3.org/TR/FileAPI" title="#FileAPI">File API</a><td>For representing file objects in Web applications, as well as programatically selecting them and accessing their data.</td><td>Before HTML5</td><td class="ready">FF WebKit Opera</td></tr>
 <!-- * <tr><td id="file-system-api"><a href="http://www.w3.org/TR/file-system-api" title="#file-system-api">File API: Directories and System</a><td>API to navigate file system hierarchies, and defines a means by which a user agent may expose sandboxed sections of a user's local filesystem to Web applications. It builds on <q>File API: Writer</q>, which in turn built on <q>File API</q>, each adding a different kind of functionality.</td><td></td><td></td></tr> -->
 <!-- * <tr><td id="file-writer-api"><a href="http://www.w3.org/TR/file-writer-api" title="#file-writer-api">File API: Writer</a><td>For writing to files from Web applications.</td><td></td><td></td></tr> -->
-<tr><td id="fullscreen"><a href="http://www.w3.org/TR/fullscreen" title="#fullscreen">Fullscreen</a><td>For presenting Web applications using the user’s entire screen.</td><td>Before HTML5</td><td class="notready">FF WebKit</td></tr>
+<tr><td id="fullscreen"><a href="http://fullscreen.spec.whatwg.org/" title="#fullscreen">Fullscreen</a><td>For presenting Web applications using the user’s entire screen.</td><td>Before HTML5</td><td class="notready">FF WebKit</td></tr>
 <tr><td id="gamepad"><a href="http://www.w3.org/TR/gamepad" title="#gamepad">Gamepad</a><td>For representing gamepad devices in Web applications.</td><td>Before HTML5</td><td class="notready">FF WebKit</td></tr>
 <tr><td id="geolocation-API"><a href="http://www.w3.org/TR/geolocation-API" title="#geolocation-API">Geolocation API</a><td>For obtaining access to geographical location information associated with a hosting device.</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
 <tr><td id="hr-time"><a href="http://www.w3.org/TR/hr-time" title="#hr-time">High Resolution Time</a><td>For providing the current time in sub-millisecond resolution and such that it is not subject to system clock skew or adjustments.</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
@@ -75,7 +75,6 @@ a {
 <tr><td id="page-visibility"><a href="http://www.w3.org/TR/page-visibility" title="#page-visibility">Page Visibility</a><td>For programatically determining the current visibility state of a page in order to develop power-efficient and CPU-efficient Web applications.</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
 <tr><td id="performance-timeline"><a href="http://www.w3.org/TR/performance-timeline" title="#performance-timeline">Performance Timeline</a><td>For accessing timing information related to navigation and elements.</td><td>Before HTML5</td><td class="ready">IE FF WebKit</td></tr>
 <tr><td id="pointerlock"><a href="http://www.w3.org/TR/pointerlock" title="#pointerlock">Pointer Lock</a><td>For access to raw mouse-movement data while locking the target of mouse events to a single element and removing the cursor from view.</td><td>Before HTML5</td><td class="notready">FF WebKit</td></tr>
-<tr><td id="progress-events"><a href="http://dvcs.w3.org/hg/progress/raw-file/tip/Overview.html" title="#progress-events">Progress Events</a><td>For measuring progress of a request made through the XMLHttpRequest interface.</td><td></td><td></td></tr>
 <tr><td id="proximity"><a href="http://www.w3.org/TR/proximity" title="#proximity">Proximity Events</a><td>For receiving events that correspond to a proximity sensor detecting the presence of a physical object. </td><td>Before HTML5</td><td class="notready">FF WebKit</td></tr>
 <tr><td id="quota-api"><a href="http://www.w3.org/TR/quota-api" title="#quota-api">Quota Management API</a><td>For managing usage and availability of local-storage resources, and granting Web applications permission to use more local space, temporarily or persistently.</td><td>Before HTML5</td><td class="notready">WebKit</td></tr>
 <tr><td id="resource-timing"><a href="http://www.w3.org/TR/resource-timing" title="#resource-timing">Resource Timing</a><td>For accessing timing information related to HTML elements.</td><td>Before HTML5</td><td class="notready">IE</td></tr>
@@ -102,7 +101,7 @@ a {
 <tr><td id="webrtc"><a href="http://www.w3.org/TR/webrtc" title="#webrtc">WebRTC</a><td>For enabling real-time audio communication and video communication over the Web.</td><td>In HTML5 timeframe</td><td class="notready">WebKit</td></tr>
 <tr><td id="webvtt"><a href="http://dev.w3.org/html5/webvtt/" title="#webvtt">WebVTT</a><td>For providing external text tracks for video and audio content (for example, subtitles and captions).</td><td></td><td></td></tr>
 <tr><td id="woff"><a href="http://dev.w3.org/webfonts/WOFF/spec/" title="#woff">WOFF</a><td>For formatting fonts for use on the Web (for example, in conjunction with @font-face rules).</td><td></td><td></td></tr>
-<tr><td id="XMLHttpRequest"><a href="http://www.w3.org/TR/XMLHttpRequest" title="#XMLHttpRequest">XMLHttpRequest</a><td>For enabling asynchronous data communication over the Web.</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
+<tr><td id="XMLHttpRequest"><a href="http://xhr.spec.whatwg.org/" title="#XMLHttpRequest">XMLHttpRequest</a><td>For enabling asynchronous data communication over the Web.</td><td>Before HTML5</td><td class="ready">IE FF WebKit Opera</td></tr>
 </table>
 <script>
 var ths = document.getElementsByTagName('TH');
@@ -149,7 +148,7 @@ for (var i = 0; i < ths.length; i += 1) {
   };
 }
 
-var query = window.location.search.substring(1); 
+var query = window.location.search.substring(1);
 var vars = query.split("&");
 for (var i=0; i<vars.length; i++) {
   var pair = vars[i].split("=");
@@ -158,7 +157,7 @@ for (var i=0; i<vars.length; i++) {
     for (var i = 0; i < ths.length; i += 1) {
       if (ths[i].innerHTML == header) {
         var event = window.document.createEvent('MouseEvent');
-        event.initEvent("click", false, true); 
+        event.initEvent("click", false, true);
         ths[i].dispatchEvent(event);
       }
     }
