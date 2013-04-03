@@ -97,8 +97,10 @@ div {
 #legend dd {
   margin-left: 8px;
 }
-#legend {
-  height: 150px;
+#legend dl:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 h2 {
   font-size: 14px;
