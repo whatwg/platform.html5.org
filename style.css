@@ -6,6 +6,7 @@ a[href*=dev\.w3\.org]:before,
 a[href*=www\.w3\.org]:before,
 a[href*=dvcs\.w3\.org]:before,
 a[href*=slightlyoff\.github\.io]:before,
+a[href*=w3c\.github\.io]:before,
 a[href*=openpeer]:before,
 a[href*=wiki\.csswg\.org]:before {
   content: "ⓦ";
