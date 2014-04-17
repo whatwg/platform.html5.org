@@ -1,6 +1,3 @@
-a[href*=whatwg] {
-  font-size: 16px;
-}
 a[href*=whatwg]:before {
   content: url('http://images.whatwg.org/icon');
   padding-right: 4px;
