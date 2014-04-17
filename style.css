@@ -3,7 +3,7 @@ a[href*=whatwg]:before {
   padding-right: 4px;
 }
 a[href*=w3.org]:before {
-  content: url('http://www.w3.org/2008/site/images/favicon.ico');
+  content: url('http://www.w3.org/2008/site/images/favicon.png');
   padding-right: 4px;
 }
 html {
