@@ -16,12 +16,14 @@ a[href*=ietf\.org]:before {
   content: "Ⓘ";
   font-weight: bold;
   font-size: 16px;
+  color: black;
   padding-right: 4px;
 }
 a[href*=khronos\.org]:before {
   content: "Ⓚ";
   font-weight: bold;
   font-size: 16px;
+  color: darkred;
   padding-right: 4px;
 }
 html {
