@@ -5,6 +5,7 @@ a[href*=whatwg]:before {
 a[href*=dev\.w3\.org]:before,
 a[href*=www\.w3\.org]:before,
 a[href*=dvcs\.w3\.org]:before,
+a[href*=slightlyoff\.github\.io]:before,
 a[href*=wiki\.csswg\.org]:before {
   content: "ⓦ";
   font-weight: bold;
@@ -24,6 +25,13 @@ a[href*=khronos\.org]:before {
   font-weight: bold;
   font-size: 16px;
   color: darkred;
+  padding-right: 4px;
+}
+a[href*=people\.mozilla\.org]:before {
+  content: "Ⓔ";
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
   padding-right: 4px;
 }
 html {
