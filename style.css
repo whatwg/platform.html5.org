@@ -2,7 +2,7 @@ a[href*=whatwg]:before {
   content: url('http://images.whatwg.org/icon');
   padding-right: 4px;
 }
-a[href*=w3.org]:before {
+a[href*=w3]:before {
   content: url('http://www.w3.org/2008/site/images/favicon.png');
   padding-right: 4px;
 }
