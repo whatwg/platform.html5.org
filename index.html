@@ -124,14 +124,14 @@
 </dl>
 <dl>
   <dt>Graphics and typography</dt>
-  <dd><a href="http://www.w3.org/TR/SVG/">SVG</a>
-  <a class=caniuse href="http://caniuse.com/#cats=SVG">ⓦ</a>
-  <a class=pleaseUse href="http://html5please.com/#svg">⚑</a>
   <dd><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html#the-canvas-element">Canvas</a>
   <a class=caniuse href="http://caniuse.com/#feat=canvas">ⓦ</a>
   <a class=tests href="http://w3c-test.org/html/tests/approved/canvas/">ⓣ</a>
   <a class=tests href="http://w3c-test.org/html/tests/submission/Microsoft/canvas/">ⓣ</a>
   <a class=pleaseUse href="http://html5please.com/#canvas">⚑</a>
+  <dd><a href="http://www.w3.org/TR/SVG/">SVG</a>
+  <a class=caniuse href="http://caniuse.com/#cats=SVG">ⓦ</a>
+  <a class=pleaseUse href="http://html5please.com/#svg">⚑</a>
   <dd><a href="https://www.khronos.org/registry/webgl/specs/latest/">WebGL</a>
   <a class=caniuse href="http://caniuse.com/#feat=webgl">ⓦ</a>
   <a class=tests href="https://cvs.khronos.org/svn/repos/registry/trunk/public/webgl/sdk/tests/webgl-conformance-tests.html">ⓣ</a>
@@ -152,6 +152,17 @@
 </dl>
 <dl>
   <dt>Platform interaction, events, messaging</dt>
+  <dd><a href="http://notifications.spec.whatwg.org/">Web Notifications</a>
+  <a class=caniuse href="http://caniuse.com/#feat=notifications">ⓦ</a>
+  <dd><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/web-messaging.html#web-messaging">Cross-document messaging</a>
+  <a class=caniuse href="http://caniuse.com/#feat=x-doc-messaging">ⓦ</a>
+  <a class=mdn href="https://developer.mozilla.org/en/DOM/window.postMessage">ⓜ</a>
+  <a class=tests href="http://w3c-test.org/webapps/WebMessaging/tests/submissions/Microsoft/">ⓣ</a>
+  <a class=pleaseUse href="http://html5please.com/#postMessage">⚑</a>
+  <dd><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/web-messaging.html#channel-messaging">Channel messaging</a>
+  <dd><a href="http://fullscreen.spec.whatwg.org/">Fullscreen</a>
+  <a class=caniuse href="http://caniuse.com/#feat=fullscreen">ⓦ</a>
+  <a class=mdn href="https://developer.mozilla.org/en/DOM/Using_full-screen_mode">ⓜ</a>
   <dd><a href="http://dev.w3.org/geo/api/spec-source.html">Geolocation</a>
   <a class=caniuse href="http://caniuse.com/#feat=geolocation">ⓦ</a>
   <a class=tests href="http://dev.w3.org/geo/api/test-suite/">ⓣ</a>
@@ -168,9 +179,6 @@
   <a class=mdn href="https://developer.mozilla.org/en/API/Mouse_Lock_API">ⓜ</a>
   <dd><a href="http://dvcs.w3.org/hg/gamepad/raw-file/default/gamepad.html">Gamepad</a>
   <a class=mdn href="https://developer.mozilla.org/en/API/Gamepad/Using_Gamepad_API">ⓜ</a>
-  <dd><a href="http://fullscreen.spec.whatwg.org/">Fullscreen</a>
-  <a class=caniuse href="http://caniuse.com/#feat=fullscreen">ⓦ</a>
-  <a class=mdn href="https://developer.mozilla.org/en/DOM/Using_full-screen_mode">ⓜ</a>
   <dd><a href="http://dev.w3.org/2011/webrtc/editor/getusermedia.html">Media Capture and Streams (getUserMedia)</a>
   <a class=caniuse href="http://caniuse.com/#feat=stream">ⓦ</a>
   <a class=tests href="http://w3c-test.org/media-capture/submitted/W3C/">ⓣ</a>
@@ -178,33 +186,25 @@
   <a class=mdn href="https://developer.mozilla.org/en/DOM/window.navigator.mozBattery">ⓜ</a>
   <dd><a href="http://dev.w3.org/2009/dap/vibration/">Vibration</a>
   <a class=mdn href="https://developer.mozilla.org/en/DOM/window.navigator.mozVibrate">ⓜ</a>
-  <dd><a href="http://notifications.spec.whatwg.org/">Web Notifications</a>
-  <a class=caniuse href="http://caniuse.com/#feat=notifications">ⓦ</a>
-  <dd><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/web-messaging.html#web-messaging">Cross-document messaging</a>
-  <a class=caniuse href="http://caniuse.com/#feat=x-doc-messaging">ⓦ</a>
-  <a class=mdn href="https://developer.mozilla.org/en/DOM/window.postMessage">ⓜ</a>
-  <a class=tests href="http://w3c-test.org/webapps/WebMessaging/tests/submissions/Microsoft/">ⓣ</a>
-  <a class=pleaseUse href="http://html5please.com/#postMessage">⚑</a>
-  <dd><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/web-messaging.html#channel-messaging">Channel messaging</a>
   <dd><a href="http://dev.w3.org/2009/dap/camera/">HTML Media Capture (the capture attribute)</a>
   <dd><a href="http://dev.w3.org/2006/webapi/clipops/clipops.html">Clipboard API and events</a>
 </dl>
 <dl>
   <dt>Storage and Files</dt>
-  <dd><a href="http://dvcs.w3.org/hg/IndexedDB/raw-file/tip/Overview.html">Indexed Database</a>
-  <a class=caniuse href="http://caniuse.com/#feat=indexeddb">ⓦ</a>
-  <a class=tests href="http://w3c-test.org/webapps/IndexedDB/tests/">ⓣ</a>
-  <a class=pleaseCaution href="http://html5please.com/#IndexedDB">⚡</a>
-  <dd><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html#offline">Offline Web applications</a>
-  <a class=caniuse href="http://caniuse.com/#feat=offline-apps">ⓦ</a>
-  <a class=tests href="http://w3c-test.org/html/tests/submission/Microsoft/appcache/">ⓣ</a>
-  <a class=tests href="http://w3c-test.org/html/tests/submission/Infraware/Offline_Application_Cache/">ⓣ</a>
-  <a class=pleaseCaution href="http://html5please.com/#offline">⚡</a>
   <dd><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/webstorage.html#webstorage">Web Storage</a>
   <a class=caniuse href="http://caniuse.com/#feat=namevalue-storage">ⓦ</a>
   <a class=mdn href="https://developer.mozilla.org/En/DOM/Storage">ⓜ</a>
   <a class=tests href="http://w3c-test.org/webapps/WebStorage/tests/submissions/Infraware/">ⓣ</a>
   <a class=pleaseCaution href="http://html5please.com/#localStorage">⚡</a>
+  <dd><a href="http://dvcs.w3.org/hg/IndexedDB/raw-file/tip/Overview.html">Indexed Database</a>
+  <a class=caniuse href="http://caniuse.com/#feat=indexeddb">ⓦ</a>
+  <a class=tests href="http://w3c-test.org/webapps/IndexedDB/tests/">ⓣ</a>
+  <a class=pleaseCaution href="http://html5please.com/#IndexedDB">⚡</a>
+  <!-- * <dd><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/offline.html#offline">Offline Web applications</a> -->
+  <!-- * <a class=caniuse href="http://caniuse.com/#feat=offline-apps">ⓦ</a> -->
+  <!-- * <a class=tests href="http://w3c-test.org/html/tests/submission/Microsoft/appcache/">ⓣ</a> -->
+  <!-- * <a class=tests href="http://w3c-test.org/html/tests/submission/Infraware/Offline_Application_Cache/">ⓣ</a> -->
+  <!-- * <a class=pleaseCaution href="http://html5please.com/#offline">⚡</a> -->
   <dd><a href="http://dev.w3.org/2006/webapi/FileAPI/">File API</a>
   <a class=caniuse href="http://caniuse.com/#feat=fileapi">ⓦ</a>
   <a class=mdn href="https://developer.mozilla.org/en/Using_files_from_web_applications">ⓜ</a>
@@ -225,11 +225,11 @@
 <dl>
   <dt>Real-time communication</dt>
   <dd><a href="http://dev.w3.org/2011/webrtc/editor/webrtc.html">Web Real-Time Communication</a>
+  <dd><a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol">WebSocket protocol</a>
   <dd><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/network.html#network">WebSocket API</a>
   <a class=caniuse href="http://caniuse.com/#feat=websockets">ⓦ</a>
   <a class=tests href="http://w3c-test.org/webapps/WebSockets/tests/">ⓣ</a>
   <a class=pleaseCaution href="http://html5please.com/#WebSockets">⚡</a>
-  <dd><a href="http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol">WebSocket protocol</a>
   <dd><a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/comms.html#server-sent-events">Server-Sent Events</a>
   <a class=caniuse href="http://caniuse.com/#feat=eventsource">ⓦ</a>
   <a class=tests href="http://w3c-test.org/html/tests/submission/MOSQUITO/event-source/">ⓣ</a>
@@ -237,7 +237,6 @@
 </dl>
 <dl>
   <dt>HTML bonus features</dt>
-  <dd><a href="http://www.w3.org/TR/wai-aria/">ARIA</a>
   <!-- * <dd><a href="http://dev.w3.org/html5/md/#microdata-dom-api">Microdata DOM API</a> -->
   <!-- * <a class=tests href="http://w3c-test.org/html/tests/submission/Opera/microdata/001.html">ⓣ</a> -->
   <!-- * <a class=pleaseUse href="http://html5please.com/#Microdata DOM API">⚑</a> -->
@@ -283,6 +282,7 @@
   <dd><a href="http://dvcs.w3.org/hg/editing/raw-file/tip/editing.html">HTML Editing APIs</a>
   <a class=tests href="http://dvcs.w3.org/hg/editing/raw-file/tip/autoimplementation.html">ⓣ</a>
   <dd><a href="http://dvcs.w3.org/hg/undomanager/raw-file/tip/undomanager.html">UndoManager and DOM Transaction</a>
+  <dd><a href="http://www.w3.org/TR/wai-aria/">ARIA</a>
 </dl>
 <dl>
   <dt>Performance optimization and analysis</dt>
@@ -342,12 +342,12 @@
   <a class=mdn href="https://developer.mozilla.org/en/javascript_typed_arrays">ⓜ</a>
   <dd><a href="http://dvcs.w3.org/hg/domcore/raw-file/tip/Overview.html#mutation-observers">Mutation observers</a>
   <dd><a href="http://dvcs.w3.org/hg/quirks-mode/raw-file/default/Overview.html">Quirks Mode</a>
-  <dd><a href="http://domparsing.spec.whatwg.org/">DOM Parsing and Serialization</a>
   <dd><a href="http://www.w3.org/TR/DOM-Level-3-XPath/">DOM XPath</a>
   <dd><a href="http://www.w3.org/TR/2006/REC-xml-20060816/">XML</a>,
   <a href="http://www.w3.org/TR/xpath/">XPath</a>,
   <a href="http://www.w3.org/TR/xslt">XSLT</a>,
   <a href="http://www.w3.org/TR/xml-stylesheet/">xml-stylesheet</a>
+  <dd><a href="http://domparsing.spec.whatwg.org/">DOM Parsing and Serialization</a>
 </dl>
 <dl>
   <dt>Foundations</dt>
