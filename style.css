@@ -3,7 +3,10 @@ a[href*=whatwg]:before {
   padding-right: 4px;
 }
 a[href*=w3]:before {
-  content: url('w3c.png');
+  content: "ⓦ";
+  font-weight: bold;
+  font-size: 18px;
+  color: blue;
   padding-right: 4px;
 }
 html {
