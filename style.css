@@ -2,7 +2,8 @@ a[href*=whatwg]:before {
   content: url('http://images.whatwg.org/icon');
   padding-right: 4px;
 }
-a[href*=dev\.w3\.org]:before {
+a[href*=dev\.w3\.org]:before,
+a[href*=www\.w3\.org]:before {
   content: "ⓦ";
   font-weight: bold;
   font-size: 18px;
