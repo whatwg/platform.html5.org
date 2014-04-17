@@ -4,7 +4,8 @@ a[href*=whatwg]:before {
 }
 a[href*=dev\.w3\.org]:before,
 a[href*=www\.w3\.org]:before,
-a[href*=dvcs\.w3\.org]:before {
+a[href*=dvcs\.w3\.org]:before,
+a[href*=wiki\.csswg\.org]:before {
   content: "ⓦ";
   font-weight: bold;
   font-size: 18px;
