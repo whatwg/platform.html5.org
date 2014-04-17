@@ -3,7 +3,8 @@ a[href*=whatwg]:before {
   padding-right: 4px;
 }
 a[href*=dev\.w3\.org]:before,
-a[href*=www\.w3\.org]:before {
+a[href*=www\.w3\.org]:before,
+a[href*=dvcs\.w3\.org]:before {
   content: "ⓦ";
   font-weight: bold;
   font-size: 18px;
