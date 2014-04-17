@@ -8,8 +8,8 @@ a[href*=dvcs\.w3\.org]:before,
 a[href*=wiki\.csswg\.org]:before {
   content: "ⓦ";
   font-weight: bold;
-  font-size: 18px;
-  color: blue;
+  font-size: 16px;
+  color: #347cb0;
   padding-right: 4px;
 }
 html {
