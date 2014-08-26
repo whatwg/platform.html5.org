@@ -48,18 +48,14 @@ with these additions to the HTML language:
  and <code>email</code>
 values for the <code>type</code> attribute of the
 <code>input</code> element
-<li><code>minimum</code> and <code>maximum</code> attributes of the
-<code>input</code> element
-(soon after
-renamed to just <code>min</code> and <code>max</code>)
-<li><code>editable</code> attribute for the <code>select</code> element
-(later dropped)
-<li><code>wrap</code> attribute for the <code>textarea</code> element
+<li><code>&lt;input minimum></code> and <code>&lt;input maximum></code> (soon after renamed to just <code>min</code> and <code>max</code>)
+<li><code>&lt;select editable></code> (later changed to <code>&lt;input list></code> plus <code>datalist</code> element)
+<li><code>&lt;textarea wrap></code>
 <li><code>pattern</code> attribute for text-input controls
 <li><code>required</code> attribute for form controls
 <li><code>form</code> attribute for form controls
 <li><code>autocomplete</code> attribute for form controls
-<li><code>inputmode</code> attribute for text-input controls (later dropped)
+<li><code>inputmode</code> attribute for text-input controls (later dropped and then re-introduced)
 <li><code>help</code> attribute for form controls (borrowed from XForms, later dropped)
 <li>client-side HTML form validation
 </ul>
@@ -69,8 +65,7 @@ renamed to just <code>min</code> and <code>max</code>)
 Proposed XHTML Module: XForms Basic
 <dd>
 <ul>
-<li><code>uri</code> value for the <code>type</code> attribute of the
-<code>input</code> element (later renamed to <code>url</code>)
+<li><code>&lt;input type=uri></code> (later renamed to <code>url</code>)
 <li><code>output</code> element
 <p class=note><a href="http://www.w3.org/TR/2001/WD-xforms-20010608/slice7.html#ui-output">XForms 1.0</a>
 (2001-06-08 sixth WD) was first to have an <code>output</code> element
@@ -81,16 +76,11 @@ Proposed XHTML Module: XForms Basic
 Web Forms 2.0
 <dd>
 <ul>
-<li><code>week</code> value for the <code>type</code> attribute of the
-<code>input</code> element
-<li><code>tel</code> value for the <code>type</code> attribute of the
-<code>input</code> element (later dropped but then later re-added)
-<li><code>location</code> value for the <code>type</code> attribute of the
-<code>input</code> element (later dropped)
-<li><code>precision</code> attribute for the <code>input</code> element
-(later renamed to <code>step</code>)
-<li><code>replace</code> attribute for the <code>form</code> element (later
-dropped)
+<li><code>&lt;input type=week></code>
+<li><code>&lt;input type=tel></code> (later dropped but then later re-added)
+<li><code>&lt;input type=location></code> (later dropped)
+<li><code>&lt;input precision></code> (later renamed to <code>step</code>)
+<li><code>&lt;form replace></code> (later dropped)
 </ul>
 
 <dt>
@@ -98,8 +88,7 @@ dropped)
 Web Forms 2.0
 <dd>
 <ul>
-<li><code>range</code> value for the <code>type</code> attribute of the
-<code>input</code> element
+<li><code>&lt;input type=range></code>
 </ul>
 
 <dt>
@@ -116,10 +105,8 @@ Web Applications Markup Language 1.0
 Web Forms 2.0
 <dd>
 <ul>
-<li><code>local-datetime</code> value for the <code>type</code> attribute of the
-<code>input</code> element (later renamed to <code>datetime-local</code>)
-<li><code>month</code> value for the <code>type</code> attribute of the
-<code>input</code> element
+<li><code>&lt;input type=local-datetime></code> (later renamed to <code>datetime-local</code>)
+<li><code>&lt;input type=month></code>
 <li><code>autofocus</code> attribute for form controls
 </ul>
 
@@ -130,7 +117,7 @@ Web Applications 1.0
 <ul>
 <li><code>&lt;!DOCTYPE html PUBLIC "-//WHATWG//NONSGML HTML5//EN"></code> (later changed)
 <li><code>command</code> attribute (later dropped but then later re-added)
-<li><code>command</code> element
+<li><code>command</code> element (later dropped)
 <li><code>commandset</code> element (later dropped)
 <li><code>button</code> element
 <li><code>menu</code> element
@@ -142,7 +129,7 @@ Web Applications 1.0
 <li><code>tabbox</code> element (later dropped)
 <li><code>switch</code> element (later dropped)
 <li><code>canvas</code> element
-<li><code>event-source</code> element (later dropped)
+<li><code>event-source</code> element (later renamed to <code>eventsource</code> and then dropped)
 <li>server-sent events
 <li><code>getElementsByClass</code> method (later renamed to <code>getElementsByClassName</code>)
 <li><code>Window</code> interface (first specified)
@@ -177,14 +164,14 @@ Web Forms 2.0
 <dd>
 <ul>
 <li><code>datalist</code> element
-<li><code>list</code> attribute of the <code>input</code> element
+<li><code>&lt;input list></code>
 </ul>
 
 <dt>
 <a href="http://web.archive.org/web/20050204185858/http://whatwg.org/specs/web-apps/current-work/">2005-02</a>
 <dd>
 <ul>
-<li>alternate style sheets (later dropped)
+<li>alternate style sheets (later moved to CSSOM)
 </ul>
 
 <dt>
@@ -233,7 +220,7 @@ Web Forms 2.0
 <a href="http://www.whatwg.org/specs/web-apps/2005-09-01/">2005-09</a>
 <dd>
 <ul>
-<li><code>Storage</code> interface, <code>sessionStorage</code>, <code>globalStorage</code>
+<li><code>Storage</code> interface, <code>sessionStorage</code>, <code>globalStorage</code> (later renamed to <code>localStorage</code>)
 </ul>
 
 <dt>
@@ -265,7 +252,7 @@ Web Forms 2.0
 </ul>
 
 <dt><a href="webapps/r15.html">2006-03</a>
-<a href="http://html5.org/r/1-15">Ⓣ</a>
+<!-- <a href="http://html5.org/r/1-15">Ⓣ</a> -->
 <dd>
 <ul>
 <li><code>meter</code> element
@@ -273,42 +260,42 @@ Web Forms 2.0
 </ul>
 
 <dt><a href="webapps/r46.html">2006-04</a>
-<a href="http://html5.org/r/15-46">Ⓣ</a>
+<!-- <a href="http://html5.org/r/15-46">Ⓣ</a> -->
 <dd>
 <ul>
 <li><b>Navigating across documents</b> section (placeholder)
 <li><b>Custom protocol and content handlers</b> section
-<li><code>registerProtocolHandler</code> method
-<li><code>registerContentHandler</code> method
-<li><code>isPointInPath</code> method
+<li><code>registerProtocolHandler()</code> method
+<li><code>registerContentHandler()</code> method
+<li><code>isPointInPath()</code> method
 </ul>
 
 <dt><a href="webapps/r59.html">2006-05</a>
-<a href="http://html5.org/r/46-59">Ⓣ</a>
+<!-- <a href="http://html5.org/r/46-59">Ⓣ</a> -->
 <dd>
 <ul>
-<li><code>defer</code> attribute for the <code>script</code> element
-<li><code>async</code> attribute for the <code>script</code> element
+<li><code>&lt;script defer></code>
+<li><code>&lt;script async></code>
 </ul>
 
 <dt><a href="webapps/r46.html">2006-06 & 2006-07</a>
-<a href="http://html5.org/r/60-97">Ⓣ</a>
+<!-- <a href="http://html5.org/r/60-97">Ⓣ</a> -->
 <dd>
 <ul>
 <li><code>details</code> element
 </ul>
 
 <dt><a href="webapps/r139.html">2006-08 & 2006-09</a>
-<a href="http://html5.org/r/98-139">Ⓣ</a>
+<!-- <a href="http://html5.org/r/98-139">Ⓣ</a> -->
 <dd>
 <ul>
-<li><code>document.write</code>
+<li><code>document.write()</code>
 <li><code>innerHTML</code>
 <li>drag-and-drop (for real)
 </ul>
 
 <dt><a href="webapps/r228.html">2006-10</a>
-<a href="http://html5.org/r/140-228">Ⓣ</a>
+<!-- <a href="http://html5.org/r/140-228">Ⓣ</a> -->
 <dd>
 <ul>
 <li><code>t</code> element (later renamed to <code>time</code>)
@@ -318,23 +305,23 @@ Web Forms 2.0
 </ul>
 
 <dt><a href="webapps/r394.html">2006-11</a>
-<a href="http://html5.org/r/228-394">Ⓣ</a>
+<!-- <a href="http://html5.org/r/228-394">Ⓣ</a> -->
 <dd>
 <ul>
 <li><code>figure</code> element
 </ul>
 
 <dt><a href="webapps/r699.html">2006-12 through 2007-03</a>
-<a href="http://html5.org/r/394-699">Ⓣ</a>
+<!-- <a href="http://html5.org/r/394-699">Ⓣ</a> -->
 <dd>
 <ul>
-<li><code>scoped</code> attribute on the <code>style</code> element
+<li><code>&lt;style scoped></code>
 <li><code>video</code> element
 <li><code>audio</code> element
 </ul>
 
 <dt><a href="webapps/r791.html">2007-04</a>
-<a href="http://html5.org/r/699-791">Ⓣ</a>
+<!-- <a href="http://html5.org/r/699-791">Ⓣ</a> -->
 <dd>
 <ul>
 <li><code>source</code> element
@@ -342,56 +329,62 @@ Web Forms 2.0
 </ul>
 
 <dt><a href="webapps/r848.html">2007-05</a>
-<a href="http://html5.org/r/791-848">Ⓣ</a>
+<!-- <a href="http://html5.org/r/791-848">Ⓣ</a> -->
 <dd>
 <ul>
-<li><code>DOMContentLoaded</code>
+<li><code>DOMContentLoaded</code> event
 <li><code>WebSQL</code> (later dropped)
 </ul>
 
 <dt><a href="webapps/r1115.html">2007-06 through 2007-10</a>
-<a href="http://html5.org/r/848-1115">Ⓣ</a>
+<!-- <a href="http://html5.org/r/848-1115">Ⓣ</a> -->
 <dd>
 <ul>
 <li>offline Web applications
-<li><code>scrollIntoView</code>
+<li><code>scrollIntoView()</code>
 </ul>
 
 <dt><a href="webapps/r1153.html">2007-11</a>
-<a href="http://html5.org/r/1115-1153">Ⓣ</a>
+<!-- <a href="http://html5.org/r/1115-1153">Ⓣ</a> -->
 <dd>
 <ul>
 <li><code>ping</code> attribute
 </ul>
 
 <dt><a href="webapps/r1518.html">2007-12 through 2008-04</a>
-<a href="http://html5.org/r/1153-1518">Ⓣ</a>
+<!-- <a href="http://html5.org/r/1153-1518">Ⓣ</a> -->
 <dd>
 <ul>
-<li>SVG and MathML support in text/html
-<li><code>data-*</code> attributes
+<li>SVG and MathML support in text/html (SVG soon after dropped and later reintroduced)
+<li><code>data-*</code> attributes and associated <code>dataset</code> API
+<li><code>&lt;ol reversed></code>
+<li><code>createTBody()</code> for the <code>table</code> element
+<li><code>showModalDialog()</code>
+<li><code>document.domain</code>
+<li><code>&lt;source pixelratio></code>
+<li><code>bufferedBytes</code>, <code>totalBytes</code> and <code>bufferingThrottled</code> IDL attributes for the <code>video</code> element (later dropped)
 </ul>
 
 <dt><a href="webapps/r1717.html">2008-05</a>
-<a href="http://html5.org/r/1518-1717">Ⓣ</a>
+<!-- <a href="http://html5.org/r/1518-1717">Ⓣ</a> -->
 <dd>
 <ul>
 <li><code>ruby</code>, <code>rt</code>, and <code>rp</code> elements
-<li><code>seamless</code> attribute for the <code>iframe</code> element
-<li><code>sandbox</code> attribute for the <code>iframe</code> element
-<li><code>sizes</code> attribute for the <code>link</code> element
+<li><code>&lt;iframe seamless></code>
+<li><code>&lt;iframe sandbox></code>
+<li><code>&lt;link sizes></code>
 <li>Web Notifications
 </ul>
 
 <dt><a href="webapps/r1835.html">2008-06</a>
-<a href="http://html5.org/r/1717-1835">Ⓣ</a>
+<!-- <a href="http://html5.org/r/1717-1835">Ⓣ</a> -->
 <dd>
 <ul>
 <li>URL parsing
 </ul>
 
 <dt><a href="webapps/r1968.html">2008-07</a>
-<a href="http://html5.org/r/1835-1968">Ⓣ</a>
+<!-- <a href="http://html5.org/r/1835-1968">Ⓣ</a> -->
 <dd>
 <ul>
 <li>Web Sockets
@@ -404,44 +397,198 @@ Web Forms 2.0
 </ul>
 
 <dt><a href="webapps/r2130.html">2008-08</a>
-<a href="http://html5.org/r/1968-2130">Ⓣ</a>
+<!-- <a href="http://html5.org/r/1968-2130">Ⓣ</a> -->
 <dd>
 <ul>
-<li><code>outerHTML</code>, <code>insertAdjacentHTML</code>
+<li><code>outerHTML</code>
+<li><code>insertAdjacentHTML</code>
 </ul>
 
 <dt><a href="webapps/r2390.html">2008-09 through 2008-10</a>
-<a href="http://html5.org/r/2130-2390">Ⓣ</a>
+<!-- <a href="http://html5.org/r/2130-2390">Ⓣ</a> -->
 <dd>
 <ul>
 <li><code>autofocus</code> attribute
 </ul>
 
+<dt>2008-09 through 2009-02</dt>
+<dd>
+<ul>
+<li><code>&lt;input type=color></code>
+<li><code>&lt;input type=search></code>
+<li><code>&lt;input multiple></code> (for <code>file</code> and <code>email</code>, later also for <code>range</code>)
+<li><code>novalidate</code> attribute for <code>input</code>, <code>button</code> and <code>form</code> elements (later renamed to <code>formnovalidate</code> for <code>input</code> and <code>button</code>)
+<li><code>indeterminate</code> IDL attribute for the <code>input</code> element (for checkboxes)
+<li><code>MessageChannel</code>
+<li><code>bb</code> element (later dropped)
+<li><code>a</code> element now allowed nested flow content
+<li><code>window.frameElement</code>
+<li>event loop and task queue
+<li><code>hidden</code> attribute (earlier <code>irrelevant</code>)
+<li><code>&lt;audio loop></code> and <code>&lt;video loop></code>
+<li><code>canPlayType()</code> on <code>audio</code> and <code>video</code> elements
+<li><code>location.resolveURL()</code> on <code>location</code> (later dropped, later replaced by <code>URL()</code> constructor)
+<li><code>unload</code> on <code>beforeunload</code> events
+</ul>
+
+<dt>2009-02 through 2009-04</dt>
+<dd>
+<ul>
+<li><code>spellcheck</code> global attribute
+<li><code>autobuffer</code> attribute on <code>audio</code> and <code>video</code> elements (later changed to <code>preload</code>)
+<li><code>locationbar</code>, <code>menubar</code>, <code>personalbar</code>, <code>scrollbars</code>, <code>statusbar</code> and <code>toolbar</code> IDL attributes on <code>window</code>
+<li>rendering section
+<li>storage mutex concept and <code>navigator.getStorageUpdates()</code> (later made optional due to refusal to implement)
+<li><code>&lt;textarea placeholder></code>
+</ul>
+
 <dt><a href="webapps/r3051.html">2009-04</a>
-<a href="http://html5.org/r/2943-3051">Ⓣ</a>
+<!-- <a href="http://html5.org/r/2943-3051">Ⓣ</a> -->
 <dd>
 <ul>
 <li><code>keygen</code> element
 <li><code>hgroup</code> element
 </ul>
 
+<dt>2009-04 through 2009-08</dt>
+<dd>
+<ul>
+<li><code>startTime</code> on <code>audio</code> and <code>video</code> elements (later <code>initialTime</code>, later dropped; separately <code>startOffsetTime</code> was added and later renamed to <code>startDate</code> and then <code>getStartDate()</code>)
+<li><code>&lt;section cite></code> and <code>&lt;article cite></code> (later dropped)
+<li><a href="http://hsivonen.fi/last-html-quirk/">The last of the parsing quirks</a>
+<li><code>textLength</code> IDL attribute on <code>textarea</code> element
+<li><code>location.reload()</code>
+<li><code>files</code> IDL attribute on <code>input</code> element and the drag-and-drop <code>DataTransfer</code> object
+<li>WAI-ARIA integrated in HTML
+</ul>
+
 <dt><a href="webapps/r3155.html">2009-05</a>
-<a href="http://html5.org/r/3051-3155">Ⓣ</a>
+<!-- <a href="http://html5.org/r/3051-3155">Ⓣ</a> -->
 <dd>
 <ul>
 <li>HTML Microdata
 </ul>
 
-<dt><a href="webapps/r4636.html">2010-01</a>
-<a href="http://html5.org/r/4443-4636">Ⓣ</a>
+<dt>2009-08 through 2010-03</dt>
 <dd>
 <ul>
-<li><code>drawFocusRing</code>
-<li><code>srcdoc</code> attribute for the <code>iframe</code> element
-<li><code>figcaption</code> element
-<li><code>summary</code> element
+<li><code>document.head</code>
+<li><code>createHTMLDocument()</code>
+<li><code>text/html-sandboxed</code> MIME type (later dropped)
 </ul>
 
+<dt><a href="webapps/r4636.html">2010-01</a>
+<!-- <a href="http://html5.org/r/4443-4636">Ⓣ</a> -->
+<dd>
+<ul>
+<li><code>drawFocusRing()</code> (later changed to <code>drawSystemFocusRing()</code> and <code>drawCustomFocusRing()</code>)
+<li><code>&lt;iframe srcdoc></code>
+<li><code>figcaption</code> element (earlier <code>legend</code>)
+<li><code>summary</code> element (earlier <code>legend</code>)
+</ul>
+
+<dt>2010-02 through 2011-01
+<!-- 4637-5779 -->
+<dd>
+<ul>
+<li><code>wbr</code> element
+<li><code>device</code> element and <code>AbstractPeer</code> and <code>PeerToPeerServer</code> interfaces (later changed to WebRTC)
+<li>WebSRT (later renamed to WebVTT), the <code>track</code> element and associated API
+<li><code>&lt;select required></code>
+<li><code>&lt;video audio=muted></code> (later changed to <code>muted</code> attribute)
+<li><code>dropzone</code> attribute
+<li><code>bdi</code> element
+<li><code>dir="auto"</code>
+<li><code>&lt;input dirname></code>
+</ul>
+
+<dt>2011-01 through 2011-04</dt>
+<!-- 5779-5974 -->
+<dd>
+<ul>
+<li><code>history.state</code>
+<li><code>atob()</code> and <code>btoa()</code>
+</ul>
+
+<dt>2011-04 through 2011-05</dt>
+<!-- 5974-6139 -->
+<dd>
+<ul>
+<li><code>toBlob()</code> method on <code>canvas</code> element
+<li><code>selectDirection</code> IDL attribute on <code>input</code> and <code>textarea</code> elements
+<li><code>MediaController</code> API and the <code>mediagroup</code> attribute
+</ul>
+
+<dt>2011-05 through 2012-03</h3>
+<!-- 6140-7027 -->
+<dd>
+<ul>
+<li><code>translate</code> global attribute
+<li><code>beforescriptexecute</code> and <code>afterscriptexecute</code> events for <code>script</code> elements
+<li><code>window.onerror</code> fourth argument for column position
+<li>CSS <code>@global</code> at-rule (later dropped)
+<li><code>data</code> element
+<li><code>isProtocolHandlerRegistered()</code>, <code>isContentHandlerRegistered()</code>, <code>unregisterProtocolHandler()</code> and <code>unregisterContentHandler()</code>
+<li>Transferring objects instead of cloning for <code>window.postMessage</code>
+<li><code>typemustmatch</code> attribute on <code>object</code> element
+<li><code>crossorigin</code> attribute on <code>img</code>, <code>video</code> and <code>audio</code> elements
+<li><code>external</code> IDL attribute on <code>window</code>
+<li><code>ellipse()</code> method on <code>canvas</code> 2d context
+<li><code>Path</code> object for <code>canvas</code> 2d context
+<li><code>http+aes:</code> and <code>https+aes:</code> URL schemes (later dropped)
+<li><code>download</code> attribute on the <code>a</code> element
+<li><code>window.find()</code> placeholder section (later dropped)
+</ul>
+
+<dt>2012-03 through 2012-09</dt>
+<!-- 7028-7347 -->
+<dd>
+<ul>
+<li><code>inBandMetadataTrackDispatchType</code> IDL attribute on <code>TextTrack</code>
+<li><code>setRangeText()</code> method on <code>input</code> and <code>textarea</code> elements
+<li><code>srcset</code> attribute on <code>img</code>
+<li><code>dialog</code> element
+<li><code>inert</code> global attribute (later dropped)
+<li><code>dialog</code> value for the <code>method</code> attribute on the <code>form</code> element
+<li><code>resetTransform()</code> method, <code>currentTransform</code> IDL attribute, several IDL attributes for font metrics, <code>resetClip()</code> method, <code>imageSmoothingEnabled</code> IDL attribute, <code>addHitRegion()</code> method, <code>removeHitRegion()</code> method and support for dashed lines for the <code>canvas</code> 2d context
+</ul>
+
+<dt>2012-09 through 2013-05</dt>
+<!-- 7347-7867 -->
+<dd>
+<ul>
+<li><code>isPointInStroke()</code> for <code>canvas</code> 2d context
+<li><code>dragexit</code> event for drag-and-drop
+<li><code>invalid</code> event on the <code>form</code> element
+<li><code>main</code> element
+<li><code>fillRule</code> IDL attribute for <code>canvas</code> 2d context
+<li><code>navigator.language</code>
+<li><code>menuitem</code> element
+<li><code>sortable</code> tables
+<li><code>document.currentScript</code>
+<li><code>&lt;link crossorigin></code>
+<li><code>&lt;script crossorigin></code>
+<li><code>canvas</code> indirect and proxied rendering contexts
+<li><code>direction</code> IDL attribute for <code>canvas</code> 2d context
+<li><code>screen.canvasResolution</code>
+<li><code>PortCollection</code>
+<li><code>supportsContext()</code> method for the <code>canvas</code> element
+<li><code>forceSpellCheck()</code> method on HTML elements
+<li><code>fastSeek()</code> method on <code>audio</code> and <code>video</code> elements
+</ul>
+
+<dt>2013-05 through 2014-08</dt>
+<!-- 7867-8715 -->
+<dd>
+<ul>
+<li><code>&lt;textarea minlength></code>
+<li><code>reportValidity()</code> on form elements
+<li><code>BroadcastChannel</code>
+<li><code>template</code> element
+<li><code>requestAutocomplete()</code>
+<li><code>picture</code> element, <code>&lt;img sizes></code>
+</ul>
+</dl>
 </section>
 
 <div id=footer>
