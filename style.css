@@ -1,5 +1,5 @@
 a[href*=whatwg]:not([href*=github]):before {
-  content: url('http://images.whatwg.org/icon');
+  content: url('//images.whatwg.org/icon');
   padding-right: 4px;
 }
 a[href*=dev\.w3\.org]:before,
