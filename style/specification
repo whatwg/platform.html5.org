@@ -142,7 +142,6 @@ span.note { padding: 0 2em; }
 .note p:last-child, .warning p:last-child { margin-bottom: 0; }
 .warning:before { font-style: normal; }
 
-.XXX:before, .XXX:after { content: " ** "; position: absolute; left: 0; width: 8em; text-align: right; }
 p.note:before { content: 'Note: '; }
 p.warning:before { content: '\26A0 Warning! '; }
 
