@@ -161,6 +161,9 @@ h2 {
 .pleaseCaution {
   color: #FA0;
 }
+.apiname {
+  font-size: 80%;
+}
 @media all and (max-width : 1200px) {
   #contentCols {
     column-count: 2; 
@@ -192,4 +195,3 @@ h2 {
     -webkit-column-fill: balance;   
   }
 }
-
