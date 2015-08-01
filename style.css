@@ -9,7 +9,8 @@ a[href*=slightlyoff\.github\.io]:before,
 a[href*=w3c\.github\.io]:before,
 a[href*=openpeer]:before,
 a[href*=wiki\.csswg\.org]:before,
-a[href*=drafts\.csswg\.org]:before {
+a[href*=drafts\.csswg\.org]:before,
+a[href*=drafts\.fxtf\.org]:before {
   content: "ⓦ";
   font-weight: bold;
   font-size: 16px;
