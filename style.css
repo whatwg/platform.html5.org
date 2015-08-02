@@ -31,6 +31,7 @@ a[href*=khronos\.org]:before {
   color: darkred;
   padding-right: 4px;
 }
+a[href*=tc39\.github\.io]:before,
 a[href*=people\.mozilla\.org]:before {
   content: "Ⓔ";
   font-weight: bold;
