@@ -34,7 +34,8 @@ a[href*=khronos\.org]:before {
   padding-right: 4px;
 }
 a[href*=tc39\.github\.io]:before,
-a[href*=people\.mozilla\.org]:before {
+a[href*=people\.mozilla\.org]:before,
+a[href*=littledan\.github\.io]:before {
   content: "Ⓔ";
   font-weight: bold;
   font-size: 16px;
