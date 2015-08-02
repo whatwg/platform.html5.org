@@ -5,6 +5,7 @@ a[href*=whatwg]:not([href*=github]):before {
 a[href*=dev\.w3\.org]:before,
 a[href*=www\.w3\.org]:before,
 a[href*=dvcs\.w3\.org]:before,
+a[href*=heycam\.github\.io]:before,
 a[href*=slightlyoff\.github\.io]:before,
 a[href*=w3c\.github\.io]:before,
 a[href*=webaudio\.github\.io]:before,
