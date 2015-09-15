@@ -3,7 +3,7 @@ a[href*=whatwg]:not([href*=github]):before {
   padding-right: 4px;
 }
 a[href*=dev\.w3\.org]:before,
-a[href*=www\.w3\.org]:before,
+a[href*=www\.w3\.org]:not(.tests):before,
 a[href*=dvcs\.w3\.org]:before,
 a[href*=heycam\.github\.io]:before,
 a[href*=slightlyoff\.github\.io]:before,
