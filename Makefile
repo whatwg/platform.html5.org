@@ -123,7 +123,11 @@ index.html: specdata.json
 			printf "<span>tests</span>" >> $@; \
 		fi; \
 		printf "<td>" >> $@; \
-		title="MDN has $$count articles related to this specification."; \
+		articles="articles"; \
+		if [[ $$count -eq 1 ]]; then \
+			articles="article"; \
+		fi; \
+		title="MDN has $$count $$articles related to this specification."; \
 		printf "<em><a href="https://w3c.github.io/mdn-spec-links/$$featureFilename" title=\"$$title\">$$count</a></em>" >> $@; \
 		if [[ -n "$$mdnURL" && "$$mdnURL" != null ]]; then \
 			printf " <a href=\"$$mdnURL\" title=\"$$mdnURL\"><img src=\"images/MDN.png\" alt="MDN"></a>" >> $@; \
