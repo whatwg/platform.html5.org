@@ -21,8 +21,9 @@ define TAIL
 cat << EOF >> $@
 </table>
 <p>
-<a id=lastmod href="https://github.com/whatwg/platform.html5.org/commits/main/index.html">Changelog</a>.
-<a href="https://projects.verou.me/css3patterns/#honeycomb">Honeycomb background by Paul Salentiny</a>.
+<a href="https://github.com/whatwg/platform.html5.org">Contribute on GitHub</a> •
+<a id=lastmod href="https://github.com/whatwg/platform.html5.org/commits/main/index.html">Changelog</a> •
+<a href="https://projects.verou.me/css3patterns/#honeycomb">Honeycomb background by Paul Salentiny</a>
 </div>
 <script src="script.js"></script>
 EOF
