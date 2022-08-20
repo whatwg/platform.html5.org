@@ -11,7 +11,7 @@ cat << EOF > $@
 <h1>The Web Platform: Browser technologies</h1>
 <p>To re-sort, click on any heading.
 <table class=sortable>
-<thead><tr><th><th>Spec<th>Tests<th>Docs<th><th><th>Category
+<thead><tr><th><th>Spec<th>Tests<th>Docs<th><th><th>Engines<th>Category
 <tbody>
 EOF
 endef
@@ -37,6 +37,9 @@ index.html: specdata.json
 	jq 'sort_by(.spec_name | ascii_downcase)' $< > $<.tmp; \
 	$(CURL) -fsSL "https://w3c.github.io/mdn-spec-links/SPECMAP.json" > SPECMAP.json; \
 	for specURL in $$(jq -r ".[].spec_url" $<.tmp); do \
+		inWebKit="no"; \
+		inGecko="no"; \
+		inBlink="no"; \
 		testsImage=images/WPT.png; \
 		specName=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").spec_name" $<.tmp); \
 		printf "$$specName\n"; \
@@ -45,6 +48,15 @@ index.html: specdata.json
 		testsURL=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").tests_url" $<.tmp); \
 		enginesCount=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").engines | length" $<.tmp); \
 		enginesArray=($$(jq -c ".[] | select(.spec_url==\"$$specURL\").engines[]" $<.tmp | tr -d '"')); \
+		if [[ " $${enginesArray[*]} " =~ " webkit " ]]; then \
+			inWebKit="yes"; \
+		fi; \
+		if [[ " $${enginesArray[*]} " =~ " gecko " ]]; then \
+			inGecko="yes"; \
+		fi; \
+		if [[ " $${enginesArray[*]} " =~ " blink " ]]; then \
+			inBlink="yes"; \
+		fi; \
 		specCategory=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").spec_category" $<.tmp); \
 		if [[ $$specURL == *"whatwg.org"* ]]; then \
 			image="images/WHATWG.png"; \
@@ -162,6 +174,11 @@ index.html: specdata.json
 		printf "$$statusIndicatorElement" >> $@; \
 		printf "</a>" >> $@; \
 		class=$$(printf "$$specCategory" | tr -cd '[:alnum:]'); \
+		printf "<td>" >> $@; \
+		printf " <a href=\"https://mozilla.github.io/standards-positions/\" title=\"https://mozilla.github.io/standards-positions/\"><img class=\"$$inGecko\" src=\"images/Gecko.png\" alt=\"Gecko: $$inGecko\"></a>" >> $@; \
+		printf " <a href=\"https://webkit.org/status/\" title=\"https://webkit.org/status/\"><img class=\"$$inWebKit\" src=\"images/WebKit.png\" alt=\"WebKit: $$inWebKit\"></a>" >> $@; \
+		printf " <a href=\"https://chromestatus.com/features\" title=\"https://chromestatus.com/features\"><img class=\"$$inBlink\" src=\"images/Blink.png\" alt=\"Blink: $$inBlink\"></a>" >> $@; \
+		printf "<span>$$inGecko $$inWebKit $$inBlink</span>" >> $@; \
 		printf "<td><u class="$$class">$$specCategory</u>\n" >> $@; \
 	done
 	eval "$$TAIL"
