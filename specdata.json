@@ -2323,7 +2323,7 @@
     "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Authentication_API",
     "caniuse_url": "https://caniuse.com/webauthn",
     "tests_url": "https://wpt.fyi/results/webauthn",
-    "engines": ["gecko", "blink"],
+    "engines": ["webkit", "gecko", "blink"],
     "spec_category": "Security"
   },
   {
