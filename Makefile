@@ -151,7 +151,7 @@ index.html: specdata.json
 			articles="article"; \
 		fi; \
 		title="MDN has $$count $$articles related to this specification."; \
-		printf "<em><a href="https://w3c.github.io/mdn-spec-links/$$featureFilename" title=\"$$title\">$$count</a></em>" >> $@; \
+		printf "<em><a href=\"https://w3c.github.io/mdn-spec-links/mdn.html?url=$$specURL&overview=$$mdnURL\" title=\"$$title\">$$count</a></em>" >> $@; \
 		printf "</div>" >> $@; \
 		printf "<td>" >> $@; \
 		if [[ $$enginesCount -eq 0 ]]; then \
