@@ -55,6 +55,7 @@ a:hover, a:focus {
 }
 
 img { margin-top: 1px; vertical-align: top; }
+table { min-width: 835px; }
 table span { opacity: 0; font-size: 0px; }
 table i { color: green; }
 table a b { color: #aaa; font-style: italic; }
@@ -82,6 +83,7 @@ em {
 }
 
 u {
+  cursor: pointer;
   text-decoration: none;
   font-family: sans-serif;
   display: inline-block;
@@ -96,24 +98,24 @@ u {
   border-radius: 3px;
   font-weight: bold;
 }
-.Animation { color: white; background-color: #e9967a; }
-.Core { color: white; background-color: #3e7817; }
-.CSS { color: white; background-color: #fe2c1c; }
-.Debuggingandreporting { color: white; background-color: #daa520; }
-.Events { color: white; background-color: #5f9ea0; }
-.Formsandediting { color: white; background-color: #bc8f8f; }
-.Graphicsandtypography { color: white; background-color: #fa7c23; }
-.HTTPandaddressing { color: white; background-color: #0b5c99; }
-.JavaScript { color: black; background-color: #fa7c23; }
-.Media { color: white; background-color: #1e90ff; }
-.Mixedreality { color: white; background-color: #c70813; }
-.Performanceprofiling { color: white; background-color: #ff69b4; }
-.Security { color: white; background-color: #8fbc8f; }
-.Storageandfiles { color: black; background-color: #ffdead; }
-.ServiceWorkers { color: black; background-color: #f6de38; }
-.Utilities { color: black; background-color: #d8bfd8; }
-.WebAssembly { color: white; background-color: #6153e4; }
-.Platforminteraction {
+u.Animation { color: white; background-color: #e9967a; }
+u.Core { color: white; background-color: #3e7817; }
+u.CSS { color: white; background-color: #fe2c1c; }
+u.Debuggingandreporting { color: white; background-color: #daa520; }
+u.Events { color: white; background-color: #5f9ea0; }
+u.Formsandediting { color: white; background-color: #bc8f8f; }
+u.Graphicsandtypography { color: white; background-color: #fa7c23; }
+u.HTTPandaddressing { color: white; background-color: #0b5c99; }
+u.JavaScript { color: black; background-color: #fa7c23; }
+u.Media { color: white; background-color: #1e90ff; }
+u.Mixedreality { color: white; background-color: #c70813; }
+u.Performanceprofiling { color: white; background-color: #ff69b4; }
+u.Security { color: white; background-color: #8fbc8f; }
+u.Storageandfiles { color: black; background-color: #ffdead; }
+u.ServiceWorkers { color: black; background-color: #f6de38; }
+u.Utilities { color: black; background-color: #d8bfd8; }
+u.WebAssembly { color: white; background-color: #6153e4; }
+u.Platforminteraction {
   color: white;
   background:
     linear-gradient(
@@ -126,7 +128,7 @@ u {
       rgba(255, 0, 0, 1) 100%
     );
 }
-.Realtimecommunication {
+u.Realtimecommunication {
   color: white;
   background:
     linear-gradient(

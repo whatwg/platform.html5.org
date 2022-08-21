@@ -58,6 +58,7 @@ index.html: specdata.json
 			inBlink="yes"; \
 		fi; \
 		specCategory=$$(jq -r ".[] | select(.spec_url==\"$$specURL\").spec_category" $<.tmp); \
+		specClass=$$(printf "$$specCategory" | tr -cd '[:alnum:]'); \
 		if [[ $$specURL == *"whatwg.org"* ]]; then \
 			image="images/WHATWG.png"; \
 			orgLink="https://spec.whatwg.org/"; \
@@ -125,7 +126,7 @@ index.html: specdata.json
 		$(CURL) -fsSL "https://w3c.github.io/mdn-spec-links/$$featureFilename" > $$featureFilename; \
 		count=$$(jq length $$featureFilename); \
 		$(RM) $$featureFilename; \
-		printf "<tr>" >> $@; \
+		printf "<tr class=\"$$specClass\">" >> $@; \
 		printf "<td><a href=\"$$orgLink\" title=\"$$orgLink\"><img src=\"$$image\" alt=\"$${image%.*}\"><span>$$image</span></a>" >> $@; \
 		printf "<td><em><a href=\"$$specURL\">$$specName</a></em>" >> $@; \
 		printf "<td>" >> $@; \
@@ -175,13 +176,12 @@ index.html: specdata.json
 		printf "<a href=\"https://w3c.github.io/mdn-spec-links/less-than-2.html?spec=$${featureFilename%.*}\">" >> $@; \
 		printf "$$statusIndicatorElement" >> $@; \
 		printf "</a>" >> $@; \
-		class=$$(printf "$$specCategory" | tr -cd '[:alnum:]'); \
 		printf "<td>" >> $@; \
 		printf " <a href=\"https://mozilla.github.io/standards-positions/\" title=\"https://mozilla.github.io/standards-positions/\"><img class=\"$$inGecko\" src=\"images/Gecko.png\" alt=\"Gecko: $$inGecko\"></a>" >> $@; \
 		printf " <a href=\"https://webkit.org/status/\" title=\"https://webkit.org/status/\"><img class=\"$$inWebKit\" src=\"images/WebKit.png\" alt=\"WebKit: $$inWebKit\"></a>" >> $@; \
 		printf " <a href=\"https://chromestatus.com/features\" title=\"https://chromestatus.com/features\"><img class=\"$$inBlink\" src=\"images/Blink.png\" alt=\"Blink: $$inBlink\"></a>" >> $@; \
 		printf "<span>$$inGecko $$inWebKit $$inBlink</span>" >> $@; \
-		printf "<td><u class="$$class">$$specCategory</u>\n" >> $@; \
+		printf "<td><u class="$$specClass" title=\"Click to show &#x201c;$$specCategory&#x201d; features only.\">$$specCategory</u>\n" >> $@; \
 	done
 	eval "$$TAIL"
 	$(RM) SPECMAP.json
