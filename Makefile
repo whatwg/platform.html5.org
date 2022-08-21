@@ -135,17 +135,19 @@ index.html: specdata.json
 			printf "<span>tests</span>" >> $@; \
 		fi; \
 		printf "<td>" >> $@; \
+		printf "<div>" >> $@; \
+		if [[ -n "$$mdnURL" && "$$mdnURL" != null ]]; then \
+			printf " <a href=\"$$mdnURL\" title=\"$$mdnURL\"><img src=\"images/MDN.png\" alt="MDN"></a>" >> $@; \
+		else \
+			printf " <img src=\"images/MDN.png\" alt="MDN" title=\"MDN has no overview article for this specification.\">" >> $@; \
+		fi; \
 		articles="articles"; \
 		if [[ $$count -eq 1 ]]; then \
 			articles="article"; \
 		fi; \
 		title="MDN has $$count $$articles related to this specification."; \
 		printf "<em><a href="https://w3c.github.io/mdn-spec-links/$$featureFilename" title=\"$$title\">$$count</a></em>" >> $@; \
-		if [[ -n "$$mdnURL" && "$$mdnURL" != null ]]; then \
-			printf " <a href=\"$$mdnURL\" title=\"$$mdnURL\"><img src=\"images/MDN.png\" alt="MDN"></a>" >> $@; \
-		else \
-			printf " <img src=\"images/MDN.png\" alt="MDN" title=\"MDN has no overview article for this specification.\">" >> $@; \
-		fi; \
+		printf "</div>" >> $@; \
 		printf "<td>" >> $@; \
 		if [[ $$enginesCount -eq 0 ]]; then \
 			shortEnginesStatement="no conforming implementations"; \
