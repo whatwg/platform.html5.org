@@ -11,7 +11,7 @@ body {
   white-space: nowrap;
 }
 
-h1, p { width: 745px; background: #fff; column-span: all; }
+h1, p { background: #fff; column-span: all; }
 
 h1 {
   color: darkseagreen;
@@ -19,6 +19,7 @@ h1 {
   margin-top: 4px;
   border: 1px dashed #ccc;
   margin-bottom: 8px;
+  width: 814px;
 }
 
 p {
@@ -29,7 +30,7 @@ p {
   font-style: italic;
   font-size: 14px;
   color: #999;
-  width: 750px;
+  width: 819px;
 }
 
 #main {
