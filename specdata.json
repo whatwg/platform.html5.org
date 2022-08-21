@@ -2179,7 +2179,7 @@
     "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Touch_events",
     "caniuse_url": "https://caniuse.com/touch",
     "tests_url": "https://wpt.fyi/results/touch-events",
-    "engines": ["gecko", "blink"],
+    "engines": ["webkit", "gecko", "blink"],
     "spec_category": "Events"
   },
   {
