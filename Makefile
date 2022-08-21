@@ -126,6 +126,10 @@ index.html: specdata.json
 		$(CURL) -fsSL "https://w3c.github.io/mdn-spec-links/$$featureFilename" > $$featureFilename; \
 		count=$$(jq length $$featureFilename); \
 		$(RM) $$featureFilename; \
+		if [ $$specURL = "https://w3c.github.io/aria/" ]; then \
+			count=$$((count + $$($(CURL) -fsSL https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/index.json \
+				| jq .doc.sidebarHTML | grep -E -o '/en-US/[-a-zA-Z/_]+' | tail -n +2 | wc -l))); \
+		fi; \
 		printf "<tr class=\"$$specClass\">" >> $@; \
 		printf "<td><a href=\"$$orgLink\" title=\"$$orgLink\"><img src=\"$$image\" alt=\"$${image%.*}\"><span>$$image</span></a>" >> $@; \
 		printf "<td><em><a href=\"$$specURL\">$$specName</a></em>" >> $@; \
