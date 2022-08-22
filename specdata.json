@@ -77,7 +77,7 @@
     "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Storage_API",
     "caniuse_url": "https://caniuse.com/?search=storagemanager",
     "tests_url": "https://wpt.fyi/results/storage",
-    "engines": ["gecko", "blink"],
+    "engines": ["blink"],
     "spec_category": "Storage and files"
   },
   {
