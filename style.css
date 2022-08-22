@@ -212,28 +212,25 @@ u.Realtimecommunication {
 }
 tr { break-inside: avoid; page-break-inside: avoid; }
 tr { background: #ccc; }
-td, th { padding: 5px 1px 6px 13px !important; border-style: solid; border-color: #dfe2e5; border-width: 0 0 0 1px;}
-th:nth-child(3) { text-align: right; }
-th:nth-child(4) { text-align: right; }
-th:nth-child(7) { text-align: right; }
-th:nth-child(8) { text-align: right; }
+td, th {
+  border-style: solid;
+  border-color: #dfe2e5;
+  border-width: 0 0 0 1px;
+}
+th { padding: 8px 1px 8px 13px !important; }
 td { padding: 8px 13px 8px 13px !important; }
+th:nth-child(8) { text-align: right; }
 td:first-child, th:first-child { border: 0 };
 td:nth-child(2) { text-align: left; }
 td:nth-child(3) { text-align: right; }
+td:nth-child(3) { text-align: right; }
+td:nth-child(3) div { position: relative; }
 td:nth-child(3) img {
-  margin-top: 1.5px;
-}
-td:nth-child(4) { text-align: right; }
-td:nth-child(4) div {
-  position: relative;
-}
-td:nth-child(4) img {
   border: solid 1px #c6cbd1;
   border-bottom-color: #959da5;
   margin-top: 0px;
 }
-td:nth-child(4) em {
+td:nth-child(3) em {
   color: white;
   background: rgb(18, 105, 211);
   padding: 2px 1px 1px 1.5px;
@@ -245,16 +242,10 @@ td:nth-child(4) em {
   min-width: 9px;
   text-align: center;
 }
-td:nth-child(4) em a {
-  color: rgb(230, 230, 230);
-}
-td:nth-child(7) img {
-  filter: grayscale(100%);
-  opacity: 0.4;
-}
-td:nth-child(7) img.yes {
-  filter: none;
-  opacity: 1;
-}
+td:nth-child(4) img { margin-top: 1.5px; }
+td:nth-child(4) { text-align: right; }
+td:nth-child(3) em a { color: rgb(230, 230, 230); }
+td:nth-child(7) img { filter: grayscale(100%); opacity: 0.4; }
+td:nth-child(7) img.yes { filter: none; opacity: 1; }
 td:nth-child(7) { text-align: right; }
 td:nth-child(8) { text-align: right; }

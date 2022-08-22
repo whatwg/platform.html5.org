@@ -11,7 +11,7 @@ cat << EOF > $@
 <h1>The Web Platform: Browser technologies</h1>
 <p>To re-sort, click on any heading.
 <table class=sortable>
-<thead><tr><th><th>Spec<th>Tests<th>Docs<th><th><th>Engines<th>Category
+<thead><tr><th><th>Spec<th>Docs<th>Tests<th><th><th>Engines<th>Category
 <tbody>
 EOF
 endef
@@ -134,12 +134,6 @@ index.html: specdata.json
 		printf "<td><a href=\"$$orgLink\" title=\"$$orgLink\"><img src=\"$$image\" alt=\"$${image%.*}\"><span>$$image</span></a>" >> $@; \
 		printf "<td><em><a href=\"$$specURL\">$$specName</a></em>" >> $@; \
 		printf "<td>" >> $@; \
-		if [[ -n "$$testsURL" && "$$testsURL" != null ]]; then \
-			printf "<a href=\"$$testsURL\" title=\"$$testsURL\">" >> $@; \
-			printf "<img src=\"$$testsImage\" alt=\"$${testsImage%.*}\"></a>" >> $@; \
-			printf "<span>tests</span>" >> $@; \
-		fi; \
-		printf "<td>" >> $@; \
 		printf "<div>" >> $@; \
 		if [[ -n "$$mdnURL" && "$$mdnURL" != null ]]; then \
 			printf " <a href=\"$$mdnURL\" title=\"$$mdnURL\"><img src=\"images/MDN.png\" alt="MDN"></a>" >> $@; \
@@ -153,6 +147,12 @@ index.html: specdata.json
 		title="MDN has $$count $$articles related to this specification."; \
 		printf "<em><a href=\"https://w3c.github.io/mdn-spec-links/mdn.html?url=$$specURL&overview=$$mdnURL\" title=\"$$title\">$$count</a></em>" >> $@; \
 		printf "</div>" >> $@; \
+		printf "<td>" >> $@; \
+		if [[ -n "$$testsURL" && "$$testsURL" != null ]]; then \
+			printf "<a href=\"$$testsURL\" title=\"$$testsURL\">" >> $@; \
+			printf "<img src=\"$$testsImage\" alt=\"$${testsImage%.*}\"></a>" >> $@; \
+			printf "<span>tests</span>" >> $@; \
+		fi; \
 		printf "<td>" >> $@; \
 		if [[ $$enginesCount -eq 0 ]]; then \
 			shortEnginesStatement="no conforming implementations"; \
