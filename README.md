@@ -1,5 +1,1 @@
-# About this repo
-
-The contents of this repo are the sources for [https://platform.html5.org/][1]
-
-   [1]: https://platform.html5.org
+Moved to https://html-now.github.io/
